@@ -78,6 +78,10 @@
       .post-meta {
         @extend %muted;
 
+        &:last-child {
+          opacity: .6;
+        }
+
         i {
           &:not(:first-child) {
             margin-left: 1.5rem;

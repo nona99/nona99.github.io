@@ -23,7 +23,8 @@ header {
     line-height: 1.6;
   }
 
-  .post-meta {
+  .post-meta {    
+    border-bottom: 1px solid;
     span + span::before {
       @include -dot;
     }
