@@ -57,6 +57,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     display: block;
     width: 6.5rem;
     height: 6.5rem;
+    padding: 10px;
+    background-color: #000;
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
@@ -66,13 +68,13 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       height: 7rem;
     }
 
-    img {
-      transition: transform 0.5s;
+    // img {
+    //   transition: transform 0.5s;
 
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
+    //   &:hover {
+    //     transform: scale(1.2);
+    //   }
+    // }
   }
 
   .profile-wrapper {
@@ -141,9 +143,9 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
         border-radius: 0.75rem;
         font-weight: 600;
 
-        &:hover {
-          background-color: var(--sidebar-hover-bg);
-        }
+        // &:hover {
+        //   background-color: var(--sidebar-hover-bg);
+        // }
 
         i {
           font-size: 95%;
