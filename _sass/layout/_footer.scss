@@ -34,3 +34,18 @@ footer {
     margin-bottom: 0;
   }
 }
+
+.lang-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  
+  > a {
+    &:hover {
+      border: 0;
+    }
+  };
+}

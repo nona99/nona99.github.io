@@ -3,7 +3,7 @@
 <footer
   aria-label="Site Info"
   class="
-    d-flex flex-column justify-content-center text-muted
+    d-flex flex-wrap flex-column justify-content-center text-muted
     flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
   "
 >
@@ -46,4 +46,13 @@
 
     {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
   </p>
+  
+  <!-- Language Selector -->
+  <div class="lang-selector">
+    <a href="/" target="_blank">🇺🇸</a>
+    <a href="/ja/" target="_blank">🇯🇵</a>
+    <a href="/zh/" target="_blank">🇨🇳</a>
+    <a href="https://nine-ai.tistory.com/">🇰🇷</a>
+  </div>
+
 </footer>
