@@ -5,6 +5,20 @@
     id="topbar"
     class="d-flex align-items-center justify-content-between px-lg-3 h-100"
   >
+
+    {% comment %}
+      🔥 언어별 홈 경로 설정
+    {% endcomment %}
+    {% assign home_path = "/" %}
+
+    {% if include.lang == "ja" or include.lang == "ja-JP" %}
+      {% assign home_path = "/ja/" %}
+    {% elsif include.lang == "zh" or include.lang == "zh-CN" %}
+      {% assign home_path = "/zh/" %}
+    {% elsif include.lang == "ko" %}
+      {% assign home_path = "https://nine-ai.tistory.com/" %}
+    {% endif %}
+
     <nav id="breadcrumb" aria-label="Breadcrumb">
       {% assign paths = page.url | split: '/' %}
 
@@ -16,8 +30,8 @@
         {% for item in paths %}
           {% if forloop.first %}
             <span>
-              <a href="{{ '/' | relative_url }}">
-                {{- site.data.locales[include.lang].tabs.home | capitalize -}}
+              <a href="{{ home_path }}">
+                {{ site.data.locales[include.lang].tabs.home | capitalize }}
               </a>
             </span>
 
@@ -31,30 +45,32 @@
           {% elsif page.layout == 'category' or page.layout == 'tag' %}
             <span>
               <a href="{{ item | append: '/' | relative_url }}">
-                {{- site.data.locales[include.lang].tabs[item] | default: page.title -}}
+                {{ site.data.locales[include.lang].tabs[item] | default: page.title }}
               </a>
             </span>
           {% endif %}
         {% endfor %}
       {% endif %}
     </nav>
-    <!-- endof #breadcrumb -->
 
+    <!-- sidebar -->
     <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
+    <!-- title -->
     <div id="topbar-title">
       {% if page.layout == 'home' %}
-        {{- site.data.locales[include.lang].title | default: site.title -}}
+        {{ site.data.locales[include.lang].title | default: site.title }}
       {% elsif page.collection == 'tabs' or page.layout == 'page' %}
-        {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
-        {{- site.data.locales[include.lang].tabs[tab_key] | default: page.title -}}
+        {% capture tab_key %}{{ page.url | split: '/' }}{% endcapture %}
+        {{ site.data.locales[include.lang].tabs[tab_key] | default: page.title }}
       {% else %}
-        {{- site.data.locales[include.lang].layout[page.layout] | default: page.layout | capitalize -}}
+        {{ site.data.locales[include.lang].layout[page.layout] | default: page.layout | capitalize }}
       {% endif %}
     </div>
 
+    <!-- search -->
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
       <i class="fas fa-search fa-fw"></i>
     </button>
@@ -65,13 +81,13 @@
         class="form-control"
         id="search-input"
         type="search"
-        aria-label="search"
         autocomplete="off"
-        placeholder="{{ site.data.locales[include.lang].search.hint | capitalize }}..."
+        placeholder="{{ site.data.locales[include.lang].search.hint }}..."
       >
     </search>
+
     <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">
-      {{- site.data.locales[include.lang].search.cancel -}}
+      {{ site.data.locales[include.lang].search.cancel }}
     </button>
   </div>
 </header>

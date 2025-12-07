@@ -42,6 +42,8 @@ header {
   }
 
   h1 + .post-meta {
+    display: flex;
+    justify-content: space-between;
     margin-top: 1.5rem;
   }
 }
@@ -113,6 +115,18 @@ header {
       }
     } /* .share-icons */
   } /* .share-wrapper */
+}
+html:not([lang="en"]) {
+  .post-tail-wrapper {
+    a {
+      pointer-events: none;
+      cursor: default;
+    }
+    .post-meta a {
+        color: var(--text-muted-color) !important;
+        border-bottom: none;
+      }
+  }
 }
 
 .post-tail-bottom {

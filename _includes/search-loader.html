@@ -1,49 +1,37 @@
-<!--
-  Jekyll Simple Search loader
-  See: <https://github.com/christian-fei/Simple-Jekyll-Search>
--->
-
-{% capture result_elem %}
-  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">
-    <header>
-      <h2><a href="{url}">{title}</a></h2>
-      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
-        {categories}
-        {tags}
-      </div>
-    </header>
-    <p>{content}</p>
-  </article>
-{% endcapture %}
-
-{% capture not_found %}<p class="mt-5">{{ site.data.locales[include.lang].search.no_results }}</p>{% endcapture %}
-
 <script>
-  {% comment %} Note: dependent library will be loaded in `js-selector.html` {% endcomment %}
-  document.addEventListener('DOMContentLoaded', () => {
-    SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('search-results'),
-      json: '{{ '/assets/js/data/search.json' | relative_url }}',
-      searchResultTemplate: '{{ result_elem | strip_newlines }}',
-      noResultsText: '{{ not_found }}',
-      templateMiddleware: function(prop, value, template) {
-        if (prop === 'categories') {
-          if (value === '') {
-            return `${value}`;
-          } else {
-            return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
-          }
-        }
+document.addEventListener("DOMContentLoaded", function () {
 
-        if (prop === 'tags') {
-          if (value === '') {
-            return `${value}`;
-          } else {
-            return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
-          }
-        }
-      }
-    });
+  // HTML lang 값 가져오기
+  let lang = document.documentElement.lang || "en";
+  lang = lang.toLowerCase();
+
+  let searchFile = "/assets/js/data/search-en.json";
+  let noResultMessage = "<p>No results found.</p>";  // 기본: 영어
+
+  // 언어별 JSON 파일 + 메시지 세팅
+  if (lang === "ja" || lang === "ja-jp") {
+    searchFile = "/assets/js/data/search-ja.json";
+    noResultMessage = "<p>該当する検索結果がありません。</p>";
+  }
+  else if (lang === "zh" || lang === "zh-cn") {
+    searchFile = "/assets/js/data/search-zh.json";
+    noResultMessage = "<p>未找到相关搜索结果。</p>";
+  }
+  else if (lang === "ko" || lang === "ko-kr") {
+    // 혹시 한국어 블로그도 검색 기능 쓸 경우 대비
+    searchFile = "/assets/js/data/search-ko.json";
+    noResultMessage = "<p>검색 결과가 없습니다.</p>";
+  }
+
+  console.log("Loaded search file:", searchFile);
+
+  SimpleJekyllSearch({
+    searchInput: document.getElementById("search-input"),
+    resultsContainer: document.getElementById("search-results"),
+    json: searchFile,
+    searchResultTemplate:
+      '<article><h2><a href="{url}">{title}</a></h2><p>{content}</p></article>',
+    noResultsText: noResultMessage
   });
+});
 </script>

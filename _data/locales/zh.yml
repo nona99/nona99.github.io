@@ -1,0 +1,84 @@
+# The layout text of site
+
+# ----- Commons label -----
+
+layout:
+  post: 文章
+  category: 分类
+  tag: 标签
+
+# The tabs of sidebar
+tabs:
+  # format: <filename_without_extension>: <value>
+  home: 主页
+  categories: 分类
+  tags: 标签
+  archives: 归档
+  about: 关于本站
+
+# the text displayed in the search bar & search results
+search:
+  hint: 搜索…
+  cancel: 取消
+  no_results: 未找到相关结果
+
+panel:
+  lastmod: 最近更新的文章
+  trending_tags: 热门标签
+  toc: 目录
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: 本文由作者以 :LICENSE_NAME 授权发布。
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  # Displayed in the footer
+  brief: 部分权利保留。
+  verbose: >-
+    除非另有说明，本网站上的文章均由作者以
+    Creative Commons Attribution 4.0 International (CC BY 4.0) 许可协议发布。
+
+meta: 使用 :THEME 主题构建于 :PLATFORM。
+
+not_found:
+  statement: 该 URL 指向的页面不存在。
+
+notification:
+  update_found: 发现新版本可用。
+  update: 更新
+
+# ----- Posts related labels -----
+
+post:
+  written_by: 作者
+  posted: 发布于
+  updated: 更新于
+  words: 字
+  pageview_measure: 次阅读
+  read_time:
+    unit: 分钟
+    prompt: 内可读完
+  relate_posts: 延伸阅读
+  share: 分享
+  button:
+    next: 下一篇
+    previous: 上一篇
+    copy_code:
+      succeed: 代码已复制
+    share_link:
+      title: 复制链接
+      succeed: 链接已复制
+
+# Date time format.
+# See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
+df:
+  post:
+    strftime: "%Y-%m-%d"
+    dayjs: "YYYY-MM-DD"
+
+# categories page
+categories:
+  category_measure: 分类
+  post_measure: 文章

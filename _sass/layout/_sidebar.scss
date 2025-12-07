@@ -45,7 +45,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 
   %sidebar-link-hover {
     &:hover {
-      color: var(--sidebar-active-color);
+      opacity: 1;
     }
   }
 
@@ -176,6 +176,10 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     }
   }
 
+  .lang-switcher {
+    width: 100%;
+    padding: 0 0 2rem 2rem;
+  }
   .sidebar-bottom {
     padding-left: 2rem;
     padding-right: 1rem;

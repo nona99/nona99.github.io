@@ -1,3 +1,4 @@
+{% if include.lang == "en" or include.lang == nil %}
 <!-- The trending tags list -->
 
 {% assign MAX = 10 %}
@@ -43,4 +44,6 @@
       {% endfor %}
     </div>
   </section>
+{% endif %}
+
 {% endif %}

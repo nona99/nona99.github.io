@@ -143,4 +143,10 @@
      crossorigin="anonymous"></script>
 
   {% include metadata-hook.html %}
+
+  {% if page.url == "/" or page.url == "/ja/" or page.url == "/zh/" %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}/" />
+    <link rel="alternate" hreflang="ja" href="{{ site.url }}/ja/" />
+    <link rel="alternate" hreflang="zh" href="{{ site.url }}/zh/" />
+  {% endif %}
 </head>
