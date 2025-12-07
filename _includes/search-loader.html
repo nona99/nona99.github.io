@@ -1,37 +1,69 @@
+{%- comment -%}
+  Search loader for Simple-Jekyll-Search
+  - 언어별 검색 JSON 파일 선택
+  - 언어별 "검색 결과 없음" 문구 출력
+{%- endcomment -%}
+
+{%- capture result_elem -%}
+<article class="px-1 px-sm-2 px-lg-4 px-xl-0">
+  <header>
+    <h2><a href="{url}">{title}</a></h2>
+    <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
+      {categories}
+      {tags}
+    </div>
+  </header>
+  <p>{content}</p>
+</article>
+{%- endcapture -%}
+
+{%- comment -%}
+  기본 "검색 결과 없음" 문구는 locale 파일에서 가져온다.
+  이 텍스트는 JS로 넘길 것이기 때문에 JSON 인코딩해 둔다.
+{%- endcomment -%}
+{%- capture not_found_html -%}
+<p class="mt-5">{{ site.data.locales[include.lang].search.no_results }}</p>
+{%- endcapture -%}
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
+  // 현재 페이지 언어 (html lang)
+  var lang = (document.documentElement.lang || 'en').toLowerCase();
 
-  // HTML lang 값 가져오기
-  let lang = document.documentElement.lang || "en";
-  lang = lang.toLowerCase();
+  // 기본값: 영어
+  var jsonPath = '{{ "/assets/js/data/search-en.json" | relative_url }}';
+  var noResultsText = {{ not_found_html | strip_newlines | jsonify }};
 
-  let searchFile = "/assets/js/data/search-en.json";
-  let noResultMessage = "<p>No results found.</p>";  // 기본: 영어
-
-  // 언어별 JSON 파일 + 메시지 세팅
-  if (lang === "ja" || lang === "ja-jp") {
-    searchFile = "/assets/js/data/search-ja.json";
-    noResultMessage = "<p>該当する検索結果がありません。</p>";
-  }
-  else if (lang === "zh" || lang === "zh-cn") {
-    searchFile = "/assets/js/data/search-zh.json";
-    noResultMessage = "<p>未找到相关搜索结果。</p>";
-  }
-  else if (lang === "ko" || lang === "ko-kr") {
-    // 혹시 한국어 블로그도 검색 기능 쓸 경우 대비
-    searchFile = "/assets/js/data/search-ko.json";
-    noResultMessage = "<p>검색 결과가 없습니다.</p>";
+  // 언어별 JSON 선택
+  if (lang === 'ja' || lang === 'ja-jp') {
+    jsonPath = '{{ "/assets/js/data/search-ja.json" | relative_url }}';
+  } else if (lang === 'zh' || lang === 'zh-cn') {
+    jsonPath = '{{ "/assets/js/data/search-zh.json" | relative_url }}';
+  } else if (lang === 'ko' || lang === 'ko-kr') {
+    jsonPath = '{{ "/assets/js/data/search-ko.json" | relative_url }}';
   }
 
-  console.log("Loaded search file:", searchFile);
+  if (!window.SimpleJekyllSearch) {
+    return;
+  }
 
   SimpleJekyllSearch({
-    searchInput: document.getElementById("search-input"),
-    resultsContainer: document.getElementById("search-results"),
-    json: searchFile,
-    searchResultTemplate:
-      '<article><h2><a href="{url}">{title}</a></h2><p>{content}</p></article>',
-    noResultsText: noResultMessage
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: jsonPath,
+    searchResultTemplate: {{ result_elem | strip_newlines | jsonify }},
+    noResultsText: noResultsText,
+    templateMiddleware: function (prop, value, template) {
+      if (prop === 'categories') {
+        if (!value) return '';
+        return '<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>' + value + '</div>';
+      }
+      if (prop === 'tags') {
+        if (!value) return '';
+        return '<div><i class="fa fa-tag fa-fw"></i>' + value + '</div>';
+      }
+      return value;
+    }
   });
 });
 </script>
