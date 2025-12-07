@@ -134,26 +134,27 @@
 </div>
 
 <script>
-  document.getElementById('lang-switch').addEventListener('change', function(e) {
-    const lang = e.target.value;
-    let url = "/";
+  document.addEventListener('DOMContentLoaded', function () {
+    var select = document.getElementById('lang-switch');
+    if (!select) return;
 
-    switch (lang) {
-      case "en":
-        url = "{{ site.url }}/";
-        break;
-      case "ko":
-        url = "https://nine-ai.tistory.com/";
-        break;
-      case "ja":
-        url = "{{ site.url }}/ja/";
-        break;
-      case "zh":
-        url = "{{ site.url }}/zh/";
-        break;
-    }
+    select.addEventListener('change', function (e) {
+      var lang = e.target.value;
+      var origin = window.location.origin;  // 예: https://nona99.github.io
+      var url = origin + '/';
 
-    window.open(url, "_blank"); // 새 탭에서 열기
+      if (lang === 'en') {
+        url = origin + '/';
+      } else if (lang === 'ko') {
+        url = 'https://nine-ai.tistory.com/';
+      } else if (lang === 'ja') {
+        url = origin + '/ja/';
+      } else if (lang === 'zh') {
+        url = origin + '/zh/';
+      }
+
+      window.open(url, '_blank'); // 새 탭에서 열기
+    });
   });
 </script>
 
