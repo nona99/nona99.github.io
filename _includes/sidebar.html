@@ -122,57 +122,27 @@
       {% endif %}
     {% endfor %}
 
-<!-- Language Selector -->
-<div id="lang-selector" class="mt-2">
-  <span class="text-white">select language : </span>
-  <select id="lang-switch"
-          class="form-select form-select-sm ms-2"
-          style="width:auto; display:inline-block;">
-    <option value="en"
-      {% if include.lang == "en" or include.lang == nil %}selected{% endif %}>
-      EN
-    </option>
-    <option value="ko">KO</option>
-    <option value="ja"
-      {% if include.lang == "ja" or include.lang == "ja-JP" %}selected{% endif %}>
-      JA
-    </option>
-    <option value="zh"
-      {% if include.lang == "zh" or include.lang == "zh-CN" %}selected{% endif %}>
-      ZH
-    </option>
-  </select>
-</div>
-
-<script>
-;(function () {
-  var select = document.getElementById('lang-switch');
-  if (!select) return;
-
-  select.addEventListener('change', function (e) {
-    var lang = e.target.value;
-    var url;
-
-    if (lang === 'en') {
-      // GitHub Pages 기준 영어 홈
-      url = '{{ "/" | relative_url }}';
-    } else if (lang === 'ko') {
-      // 티스토리
-      url = 'https://nine-ai.tistory.com/';
-    } else if (lang === 'ja') {
-      url = '{{ "/ja/" | relative_url }}';
-    } else if (lang === 'zh') {
-      url = '{{ "/zh/" | relative_url }}';
-    } else {
-      return;
-    }
-
-    window.open(url, '_blank');
-  });
-})();
-</script>
-
-
+    <!-- Language Selector -->
+    <div id="lang-selector" class="mt-2">
+      <span class="text-white">select language : </span>
+      <select id="lang-switch"
+              class="form-select form-select-sm ms-2"
+              style="width:auto; display:inline-block;">
+        <option value="en"
+          {% if include.lang == "en" or include.lang == nil %}selected{% endif %}>
+          EN
+        </option>
+        <option value="ko">KO</option>
+        <option value="ja"
+          {% if include.lang == "ja" or include.lang == "ja-JP" %}selected{% endif %}>
+          JA
+        </option>
+        <option value="zh"
+          {% if include.lang == "zh" or include.lang == "zh-CN" %}selected{% endif %}>
+          ZH
+        </option>
+      </select>
+    </div>
 
   </div>
   <!-- .sidebar-bottom -->
