@@ -8,6 +8,7 @@ tags:
 - AILife
 - ChatGPTfree
 - AIguide2025
+lang: en
 ---
 
 

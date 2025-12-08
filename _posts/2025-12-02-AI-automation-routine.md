@@ -6,6 +6,7 @@ tags:
 - automation
 - AI agent
 - content creator
+lang: en
 ---
 
 # 2025 Creator Essentials: How to Cut Your Work Time in Half with AI Automation Routines

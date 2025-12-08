@@ -6,6 +6,7 @@ tags:
 - AI workflow
 - automation
 - On-device AI
+lang: en
 ---
 
 # 7 Strategies for Individual Survival in the AI ​​Era: A New Way of Working We Must Change

@@ -5,6 +5,7 @@ tags:
 - AI Automation
 - AI Agent
 - Generative AI
+lang: en
 ---
 
 # Five Key AI Trends Shaking the Market in the Last Week of November 2025

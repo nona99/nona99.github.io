@@ -10,6 +10,7 @@ tags:
 - elonmusk
 - AItechnology
 date: 2025-12-09 12:00:00 +0900
+lang: en
 ---
 
 # **Is Tesla FSD Powered by Grok? A Clear Breakdown of a Common Misconception**

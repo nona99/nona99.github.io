@@ -9,6 +9,7 @@ tags:
 - ChatGPT guide
 - Smart shopping
 - Online Shopping
+lang: en
 ---
 
 

@@ -6,6 +6,7 @@ tags:
 - figma ai
 - design tool
 - uxui
+lang: en
 ---
 
 # Why is Figma Pushing AI Now? — Design Industry Changes and Figma AI's Strategy

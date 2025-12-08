@@ -5,6 +5,7 @@ tags:
 - AI trend
 - AI agent
 - AI automation
+lang: en
 ---
 
 # The Era of Autonomous AI Agents: Transforming Work and Creating New Opportunities

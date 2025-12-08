@@ -8,6 +8,7 @@ tags:
 - image AI
 - Creative AI
 - AI generation
+lang: en
 ---
 
 The Moment AI Creative Tools Shifted — My Experience Using Nano Banana Pro

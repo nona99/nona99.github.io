@@ -8,6 +8,7 @@ tags:
 - Generative AI
 - AI Automation
 - SLM
+lang: en
 ---
 
 Today, we’ll take a deep dive into the key trends and latest product developments in the rapidly evolving field of artificial intelligence (AI). From 2024 to 2026, what will drive the AI industry forward, and which AI models, hardware, and software are currently shaping the market? Let’s explore these questions together.

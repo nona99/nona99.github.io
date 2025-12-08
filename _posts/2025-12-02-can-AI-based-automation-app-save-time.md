@@ -7,6 +7,7 @@ tags:
 - increased productivity
 - automation app
 - smart phone ai
+lang: en
 ---
 
 # AI-based meeting and note automation: Does it really save time? A practical look at the impact through real-world examples

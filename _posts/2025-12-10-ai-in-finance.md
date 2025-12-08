@@ -9,7 +9,8 @@ tags:
 - AMLTech
 - Digital Banking
 - Wealth Tech
-date: 2025-12-08 18:00:00 +0900
+date: 2025-12-10 09:00:00 +0900
+lang: en
 ---
 
 

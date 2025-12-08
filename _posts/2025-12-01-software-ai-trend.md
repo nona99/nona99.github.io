@@ -5,6 +5,7 @@ tags:
 - Trend Forecast
 - Industry Outlook
 - AI Software
+lang: en
 ---
 
 # AI Software Trends and Future Outlook

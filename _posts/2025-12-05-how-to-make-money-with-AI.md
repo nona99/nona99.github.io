@@ -9,6 +9,7 @@ tags:
 - AI freelancer
 - AI economy
 - AI creator
+lang: en
 ---
 
 

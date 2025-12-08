@@ -6,6 +6,7 @@ tags:
 - korea ai
 - AI industry
 - AI exhibition
+lang: en
 ---
 
 

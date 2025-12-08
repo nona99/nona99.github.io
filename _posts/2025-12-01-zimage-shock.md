@@ -5,6 +5,7 @@ tags:
 - Generative AI
 - Z Image
 - nanobanana
+lang: en
 ---
 
 The generative image market is rapidly reorganizing, with new models emerging every year. Among these, **Z-Image** is attracting attention as a next-generation image generation model with enhanced text comprehension, high-resolution representation, and scene consistency. Interest in the entire lineup is high, with **Z-Image Turbo** currently being released and tested in production settings, and **Z-Image Base** and **Z-Image Edit** scheduled for sequential release.

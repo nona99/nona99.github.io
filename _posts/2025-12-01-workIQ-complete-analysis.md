@@ -6,6 +6,7 @@ tags:
 - MicroSoft
 - workIQ
 - 2025 Microsoft Ignite
+lang: en
 ---
 
 # Microsoft Ignite 2025 Work IQ Complete Summary

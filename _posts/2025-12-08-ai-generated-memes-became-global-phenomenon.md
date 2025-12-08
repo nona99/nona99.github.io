@@ -10,6 +10,7 @@ tags:
 - GenAlpha
 - AImarketing
 date: 2025-12-08 09:00:00 +0900
+lang: en
 ---
 
 ## Why AI-Generated Memes Became a Global Phenomenon in 2025

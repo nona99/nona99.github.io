@@ -7,6 +7,7 @@ tags:
 - gemini
 - google
 - code red
+lang: en
 ---
 
 # The Reality of OpenAI's 'Code Red' Alert: What Changes Will It Bring to the AI ​​Ecosystem?

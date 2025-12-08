@@ -10,6 +10,7 @@ tags:
 - smartfactory
 - AItechnology
 date: 2025-12-09 09:00:00 +0900
+lang: en
 ---
 
 # **The Era of Physical AI: Intelligent Systems That See, Think, and Act in the Real World**

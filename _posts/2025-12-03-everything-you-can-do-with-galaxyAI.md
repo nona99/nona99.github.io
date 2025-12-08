@@ -8,6 +8,7 @@ tags:
 - mobile ai
 - work smarter
 - tech guide
+lang: en
 ---
 
 # Complete Guide to Using Galaxy AI — Practical Tips to Lighten Both Daily Life and Work

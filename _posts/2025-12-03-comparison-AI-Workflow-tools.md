@@ -8,6 +8,7 @@ tags:
 - Claude Skills
 - OpenAI AgentBuilder
 - automation
+lang: en
 ---
 
 ## In the era of AI automation, choosing the right workflow tool is key.

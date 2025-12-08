@@ -8,6 +8,7 @@ tags:
 - AIChip
 - AIHardware
 - AItrend
+lang: en
 ---
 
 ## 2025: A Power Shift Across Smartphones, Wearables, and PCs

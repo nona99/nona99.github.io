@@ -7,6 +7,7 @@ tags:
 - automation AI
 - AI generation
 - natural language
+lang: en
 ---
 
 

@@ -11,6 +11,7 @@ tags:
 - GE Healthcare
 - Siemens Healthineers
 date: 2025-12-08 12:00:00 +0900
+lang: en
 ---
 
 

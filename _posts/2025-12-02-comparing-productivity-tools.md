@@ -6,6 +6,7 @@ tags:
 - AI workflow
 - automation
 - On-device AI
+lang: en
 ---
 
 As the number of people working alone—freelancers, solopreneurs, and solo creators—increases, the question of "What productivity tools should I use?" grows. Especially when people are using multiple tools, such as calendars, task management, projects, documents, and notes, managing the tools can often lead to more time being wasted.

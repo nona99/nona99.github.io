@@ -5,6 +5,7 @@ tags:
 - ChatGPT
 - Shopping Assistance
 - shopping ai
+lang: en
 ---
 
 # How ChatGPT’s “Shopping Assistance” Will Change the Game

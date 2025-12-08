@@ -8,6 +8,7 @@ tags:
 - automation
 - n8n
 - make
+lang: en
 ---
 
 Thanks to AI tools, blogging is no longer a battle of time and energy, but a battle of systems. If, as in the past, humans manually handled the entire process—from ideation to writing, image creation, and uploading—it would be difficult to write even one post a day. However, a well-designed AI workflow allows for five to ten times more experiments and publications in the same amount of time. This article goes beyond simply "write with AI." It outlines specific steps and tool combinations that can actually speed up your Tistory blog by up to tenfold.

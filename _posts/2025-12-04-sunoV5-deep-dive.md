@@ -8,6 +8,7 @@ tags:
 - text to music
 - AI audio
 - AI composition
+lang: en
 ---
 
 

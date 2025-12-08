@@ -8,6 +8,7 @@ tags:
 - Apple
 - AI Chip
 - on-device AI
+lang: en
 ---
 
 # 2025 AI Chips Trend: Comparative Analysis of NVIDIA, Qualcomm, and Apple

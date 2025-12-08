@@ -7,6 +7,7 @@ tags:
 - automation
 - chatgpt
 - Chatbot
+lang: en
 ---
 
 The era of individuals automatically earning money through AI is truly dawning in 2025. Now, even if you're not a professional developer or know complex code, you can create a "24/7 automated profit system" using AI agents, automation, and no-code platforms.

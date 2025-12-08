@@ -5,6 +5,7 @@ tags:
 - AI Tool
 - Generative AI
 - Pika 1.0
+lang: en
 ---
 
 # Pika 1.0 AI Video Generation Tool Analysis — Features, Pros & Cons, and User Reviews

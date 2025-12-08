@@ -8,6 +8,7 @@ tags:
 - AI Automation
 - AI Agent
 - Increased productivity
+lang: en
 ---
 # Cognosis Agent Transformed to Ottogrid: What's New?
 

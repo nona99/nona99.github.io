@@ -8,7 +8,8 @@ tags:
 - text to video
 - AI video
 - AI tool
-date: '2025-12-07 15:30:00 +0900'
+date: 2025-12-07 15:30:00 +0900
+lang: en
 ---
 
 # Runway ML: Research Report on AI Video Generation and Editing Tools

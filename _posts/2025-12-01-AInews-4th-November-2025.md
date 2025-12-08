@@ -6,6 +6,7 @@ tags:
 - AI Agent
 - LLM
 - AI regulation
+lang: en
 ---
 
 # 10 Must-See AI News for the Fourth Week of November 2025

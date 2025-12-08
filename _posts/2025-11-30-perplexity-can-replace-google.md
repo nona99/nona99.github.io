@@ -7,6 +7,7 @@ tags:
 - chatgpt
 - gemini
 - Conversational AI
+lang: en
 ---
 
 # Perplexity Can Replace Google?
