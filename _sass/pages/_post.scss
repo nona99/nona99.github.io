@@ -24,6 +24,8 @@ header {
   }
 
   .post-meta {    
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid;
     span + span::before {
       @include -dot;
