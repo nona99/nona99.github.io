@@ -1,6 +1,6 @@
 ---
 title: How ChatGPT’s “Shopping Assistance” Will Change the Game
-category: AI trend
+category: AI Trend
 tags:
 - ChatGPT
 - Shopping Assistance
