@@ -1,6 +1,5 @@
 ---
 title: "How AI Became the Core of Content Creation in 2025: Workflow Innovation, Real Cases, and Strategy"
-date: 2025-12-12 12:00:00 +0900
 categories: ["AI Trend"]
 tags: ["AI content", "generative AI", "marketing AI", "content automation", "AI workflow", "brand strategy", "GEO", "AI analytics", "TUI case", "Zepeto AI", "AI trends 2025"]
 lang: en

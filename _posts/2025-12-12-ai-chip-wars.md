@@ -3,7 +3,6 @@ title: "The Truth Behind the AI Chip Wars: Is NVIDIA Losing Ground to Google TPU
 categories: ["AI Hardware"]
 tags: ["AI chips", "NVIDIA", "Google TPU", "AMD", "AI hardware", "semiconductor", "generative AI"]
 lang: en
-date: 2025-12-12 09:00:00 +0900
 description: "A deep-dive analysis into the shifting AI semiconductor landscape in 2025 — exploring whether NVIDIA's dominance is weakening as Google TPU and AMD rise as competitive alternatives."
 image: "/assets/img/post/chip.png"
 
