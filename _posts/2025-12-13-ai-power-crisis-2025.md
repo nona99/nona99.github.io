@@ -1,6 +1,5 @@
 ---
 title: 'The AI Power Crisis: Why 2025 Turns AI Into the World’s Biggest Energy Consumer'
-date: "2025-12-13 12:00:00 +0900"
 categories:
 - AI Industry
 - Energy Market
@@ -29,6 +28,7 @@ og_type: article
 keywords: AI power crisis, AI electricity usage, GPT-5.1 energy demand, Claude 4.2
   power usage, Gemini 3 infrastructure, AI data center growth, GPU energy efficiency,
   nuclear energy for AI, renewable energy AI demand
+date: 2025-12-13 12:00:00 +0900
 ---
 
 In 2025, the AI industry is no longer defined solely by model performance.

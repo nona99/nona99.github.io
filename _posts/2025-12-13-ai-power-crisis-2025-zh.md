@@ -1,6 +1,5 @@
 ---
 title: "AI电力危机：为什么2025年让AI成为全球最大的能源消耗者？"
-date: "2025-12-13 12:00:00 +0900"
 categories:
 - AI产业
 - 能源市场
@@ -24,6 +23,7 @@ og_image: "/assets/img/post/ai-power-crisis.png"
 og_type: article
 keywords: AI电力危机, AI耗电量, GPT-5.1能耗, Claude 4.2能耗, Gemini 3基础设施, AI数据中心增长, GPU能效, AI核能应用, AI可再生能源需求
 permalink: /zh/-ai-power-crisis-2025/
+date: 2025-12-13 12:00:00 +0900
 ---
 
 在2025年，AI产业的核心已经不再只是模型性能竞争。  
