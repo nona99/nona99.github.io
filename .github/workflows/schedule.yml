@@ -1,0 +1,18 @@
+name: Scheduled Build
+on:
+  schedule:
+    - cron: "0 4 * * *" # 매일 오전 4시에 빌드 실행
+  workflow_dispatch:      # 수동 실행도 가능
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build Jekyll
+        uses: actions/jekyll-build-pages@v1
+
+      - name: Deploy
+        uses: actions/upload-pages-artifact@v2
