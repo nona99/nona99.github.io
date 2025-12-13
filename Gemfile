@@ -1,13 +1,10 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "jekyll-theme-chirpy"
-gem "jekyll-admin", group: :jekyll_plugins
+gemspec
 
-group :test do
-  gem "html-proofer", "~> 5.0"
-end
+gem "html-proofer", "~> 5.0", group: :test
+gem "jekyll-admin", group: :jekyll_plugins
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
