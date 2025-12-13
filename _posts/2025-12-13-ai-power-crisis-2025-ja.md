@@ -22,7 +22,7 @@ og_description: AIの発展はもはやアルゴリズムによって制限さ�
 og_image: "/assets/img/post/ai-power-crisis.png"
 og_type: article
 keywords: AI電力危機, AI電力使用量, GPT-5.1電力需要, Claude 4.2電力消費, Gemini 3基盤, AIデータセンター電力, GPU省電力化, AI核エネルギー利用, 再生可能エネルギーAI需要
-permalink: /ja/-ai-power-crisis-2025/
+permalink: /ja/ai-power-crisis-2025/
 date: 2025-12-13 12:00:00 +0900
 ---
 
