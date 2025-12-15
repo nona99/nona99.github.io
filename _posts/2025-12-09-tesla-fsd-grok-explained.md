@@ -30,17 +30,17 @@ This article explains where the confusion comes from, what AI actually runs insi
 To understand the misconception, we need to look at where it comes from.
 
 Tesla’s **FSD (Full Self-Driving)** is an autonomous driving system designed to perceive the environment through eight cameras, interpret the scene, and control the vehicle’s steering, acceleration, and braking in real time. In other words, it functions as the vehicle’s *driving brain*. Tesla has publicly explained FSD’s architecture several times during **Tesla AI Day** events.
-Reference: [AI with Armand](https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com)
+Reference: [AI with Armand](https://www.armand.so/recap-tesla-ai-day-2022/)
 
 Elon Musk also founded **xAI** in 2023, which released **Grok**, a large-language model (LLM) designed to compete with OpenAI’s GPT series and Google’s Gemini. Grok excels at tasks like summarizing long documents, helping with coding, and generating answers using real-time web data. xAI has released multiple versions—Grok-1.5, Grok-2, Grok-4—each improving reasoning, context length (up to 128k tokens), and multimodal capabilities.
-Reference: [xAI](https://x.ai/news/grok-1.5?utm_source=chatgpt.com)
+Reference: [xAI](https://x.ai/news/grok-1.5)
 
 A few overlapping factors added to the confusion:
 
 * Both projects are Musk-led AI initiatives
 * Both are labeled “AI” in a broad sense
 * Grok began appearing directly inside Tesla vehicles’ infotainment systems starting in 2025
-  Reference: [Wikipedia](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com)
+  Reference: [Wikipedia](https://en.wikipedia.org/wiki/Grok_%28chatbot%29)
 
 So when someone sees a “Grok” icon inside the car, while the vehicle is autonomously driving via “FSD,” it’s natural to assume they might be part of the same system.
 
@@ -53,13 +53,13 @@ But the AI that *drives* the car and the AI that *talks* to the driver live in e
 The core of Tesla FSD is a set of **deep-learning systems that understand the world through vision and make driving decisions based on that understanding**.
 
 Early versions used a multitask network called **HydraNet**, which handled lane detection, vehicle recognition, traffic lights, pedestrians, and more. On top of this perception layer, FSD used classical planning algorithms like A* or Monte Carlo Tree Search for path planning.
-Reference: [Think Autonomous](https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/?utm_source=chatgpt.com)
+Reference: [Think Autonomous](https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/)
 
 In 2022, Tesla introduced the **Occupancy Network**, which transforms 2D camera images into a detailed 3D voxel representation of the environment. It predicts free space, obstacles, and even occluded areas. This “digital twin” of the surroundings allows Tesla to achieve perception-level performance similar to lidar-equipped systems—without using lidar hardware.
-Reference: [AI with Armand](https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com)
+Reference: [AI with Armand](https://www.armand.so/recap-tesla-ai-day-2022/)
 
 More recently, Tesla has shifted toward a fully **end-to-end** architecture. Instead of separate perception → rules → planning → control stages, a single neural network processes video input and produces steering, acceleration, and braking decisions directly. Researchers call this **end-to-end planning**, and Tesla’s FSD V12–V13 system heavily incorporates this approach.
-Reference: [arXiv](https://arxiv.org/html/2401.08658v1?utm_source=chatgpt.com)
+Reference: [arXiv](https://arxiv.org/html/2401.08658v1)
 
 To summarize, FSD’s internal AI stack consists of:
 
@@ -76,7 +76,7 @@ All of this operates under extreme real-time constraints—processing dozens of 
 Grok, in contrast, is a **large language model designed for general reasoning**, conversation, coding, summarization, and image understanding.
 
 xAI has iterated rapidly—from Grok-1 to Grok-4—improving mathematical reasoning, scientific benchmarks like MMLU, GPQA, and MATH, and adding multimodal features.
-Reference: [xAI](https://x.ai/blog/grok-2?utm_source=chatgpt.com)
+Reference: [xAI](https://x.ai/blog/grok-2)
 
 By 2025, Grok is deployed across:
 
@@ -84,7 +84,7 @@ By 2025, Grok is deployed across:
 * User queries and content generation
 * Developer tools
 * A standalone mobile and web application
-  Reference: [Wikipedia](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com)
+  Reference: [Wikipedia](https://en.wikipedia.org/wiki/Grok_%28chatbot%29)
 
 Grok’s inputs are:
 
@@ -137,7 +137,7 @@ Grok can take hundreds of milliseconds or more to generate a response without ri
 Using Grok to drive a car would be like asking a novelist to pilot an airplane. Both are intelligent in their own way, but they are trained on different senses, feedback loops, and risk structures.
 
 Across the industry (Waymo, Tesla, Nvidia, Huawei), the trend from 2023 to 2025 has been to build **dedicated, vision-based end-to-end planning networks**, not to embed LLMs inside the driving core.
-Reference: [arXiv](https://arxiv.org/html/2401.08658v1?utm_source=chatgpt.com)
+Reference: [arXiv](https://arxiv.org/html/2401.08658v1)
 
 So the accurate way to think about it is:
 
@@ -151,7 +151,7 @@ This is where the discussion gets interesting.
 While Grok is extremely unlikely to become the *core driving engine* of FSD, it *could* play a **supporting role** within Tesla vehicles.
 
 In mid-2025, Grok began shipping in Tesla cars—not for driving, but as an **infotainment assistant**.
-Reference: [Wikipedia](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com)
+Reference: [Wikipedia](https://en.wikipedia.org/wiki/Grok_%28chatbot%29)
 
 Drivers can ask Grok about navigation, schedules, news summaries, or vehicle features—but Grok does not control the vehicle.
 

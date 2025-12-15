@@ -39,17 +39,17 @@ date: 2025-12-09 12:00:00 +0900
 要理解误会，我们必须先看它从哪开始的。
 
 Tesla 的 **FSD（完全自动驾驶系统）** 是基于 8 个摄像头的视觉自动驾驶系统。FSD需要实时理解车辆周围的环境，包括车道、障碍物、行人、交通灯，并需要在毫秒级时间内做出转向、加速和制动的决定。
-参考: [https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com](https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com)
+参考: [https://www.armand.so/recap-tesla-ai-day-2022/](https://www.armand.so/recap-tesla-ai-day-2022/)
 
 而 **Grok** 是 Elon Musk 在 2023 年创立的 xAI 推出的 **大语言模型（LLM）**，旨在与 GPT 与 Gemini 竞争。它用于总结信息、聊天、代码生成、新闻问答等。
-参考: [https://x.ai/news/grok-1.5?utm_source=chatgpt.com](https://x.ai/news/grok-1.5?utm_source=chatgpt.com)
+参考: [https://x.ai/news/grok-1.5](https://x.ai/news/grok-1.5)
 
 产生混淆的原因很简单：
 
 * 两者都属于“马斯克的AI项目”
 * 两者都被笼统称为 AI
 * 2025 年起，Grok 被整合进 Tesla 车机系统（但仅用于对话和信息查询）
-  参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com)
+  参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29](https://en.wikipedia.org/wiki/Grok_%28chatbot%29)
 
 车内看到“Grok”图标，同时车辆正在使用“FSD”自动驾驶，人们便自然以为它们使用同一个AI模型。
 
@@ -63,11 +63,11 @@ Tesla 的 **FSD（完全自动驾驶系统）** 是基于 8 个摄像头的视�
 Tesla FSD 的核心是一个 **纯视觉的深度学习系统** —— 它通过摄像头理解世界，并根据视频输入直接输出驾驶动作。
 
 早期的 FSD 使用多任务网络 **HydraNet** 来检测车道、车辆、红绿灯、行人等，再结合经典算法（如 A* 或蒙特卡罗树搜索）进行规划。
-参考: [https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/?utm_source=chatgpt.com](https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/?utm_source=chatgpt.com)
+参考: [https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/](https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/)
 
 2022 年推出的 **Occupancy Network（占用网络）** 则是重大突破。
 它能将 2D 摄像头画面转化为精细的 3D 体素表示（voxel grid），预测可行驶空间、障碍物以及遮挡区域，几乎达到 LiDAR 水平，但不使用 LiDAR。
-参考: [https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com](https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com)
+参考: [https://www.armand.so/recap-tesla-ai-day-2022/](https://www.armand.so/recap-tesla-ai-day-2022/)
 
 在 2024–2025 年，Tesla FSD V12～V13 进入 **端到端（End-to-End）架构**：
 
@@ -75,7 +75,7 @@ Tesla FSD 的核心是一个 **纯视觉的深度学习系统** —— 它通过
 * 输出：方向盘角度、油门、刹车
 
 中间不再分为“感知 → 规划 → 控制”，而是一个统一网络处理全部任务。
-参考: [https://arxiv.org/html/2401.08658v1?utm_source=chatgpt.com](https://arxiv.org/html/2401.08658v1?utm_source=chatgpt.com)
+参考: [https://arxiv.org/html/2401.08658v1](https://arxiv.org/html/2401.08658v1)
 
 FSD 的内部结构包括：
 
@@ -154,7 +154,7 @@ Grok 即使能“看图”，也无法处理 30FPS 以上的视频流，更无�
 * 车辆功能说明
 
 它并不控制车辆。
-参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com)
+参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29](https://en.wikipedia.org/wiki/Grok_%28chatbot%29)
 
 未来可能出现的角色包括：
 

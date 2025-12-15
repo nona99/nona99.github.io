@@ -16,10 +16,10 @@ og_description: "クラウドサービス不要で Z-Image Turbo をローカル
 クラウド料金もログインも不要で、自分の PC 上だけで動作させることができ、**高速・高画質・高いプライバシー性を兼ね備えた画像生成**が可能だからです。
 
 Z-Image は阿里巴巴（Alibaba）系の研究チームによって公開された **60 億パラメータ規模の画像生成ファウンデーションモデル**で、テキストプロンプトから高品質な画像を生成でき、編集やリタッチにも対応します。  
-([Hugging Face](https://huggingface.co/papers/2511.22699?utm_source=chatgpt.com))
+([Hugging Face](https://huggingface.co/papers/2511.22699))
 
 本記事では、**アカウント登録不要で Z-Image をローカル環境に導入し、動作させる方法**を解説します。特に最も利用されている組み合わせである **ComfyUI + Z-Image Turbo** を中心に説明します。  
-([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 ![z-image](/assets/img/post/z-image-tutorial.png)
 
@@ -31,22 +31,22 @@ Z-Image / Z-Image Turbo シリーズには、以下のような強みがあり�
 
 - **60 億パラメータの Single-Stream Diffusion Transformer（S3-DiT）**  
   → テキスト・画像条件・ノイズを単一シーケンスで処理する統合アーキテクチャで、**モデル規模に対して高い性能と高速推論**を実現します。  
-  ([Tongyi Mai](https://tongyi-mai.github.io/Z-Image-blog/?utm_source=chatgpt.com))
+  ([Tongyi Mai](https://tongyi-mai.github.io/Z-Image-blog/))
 
 - **Z-Image Turbo は Z-Image の蒸留版**  
   → NFE（ステップ数）を削減しつつ品質を維持し、**わずか約 8 ステップで高品質な画像が生成可能**です。  
-  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 - **一般向け GPU に最適化**  
   → 公式では 16GB VRAM を推奨としていますが、stable-diffusion.cpp などの最適化エンジンを利用すれば、**4GB VRAM 環境でも動作可能な実装**があります。  
-  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 - **フォトリアル表現 + テキスト描画が強い**  
   → 海報、バナー、プロダクトモックアップなどで高い表現力を発揮し、特に英語・中国語の文字描画品質が優れています。  
-  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 まとめると、**Z-Image はローカル実行型モデルの中でも、速度・画質・VRAM 消費のバランスが非常に優れたモデル**と言えます。  
-([Stable Diffusion Art](https://stable-diffusion-art.com/z-image-wan-2-2/?utm_source=chatgpt.com))
+([Stable Diffusion Art](https://stable-diffusion-art.com/z-image-wan-2-2/))
 
 ---
 
@@ -55,10 +55,10 @@ Z-Image / Z-Image Turbo シリーズには、以下のような強みがあり�
 Z-Image は *モデル* であってサービスではないため、実行には対応する UI / 推論エンジンを選ぶ必要があります。代表的な方法は以下の 2 つです：
 
 1. **ComfyUI + Z-Image Turbo（最も一般的で使いやすいノード式 UI）**  
-   ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+   ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 2. **stable-diffusion.cpp + Z-Image（C++ バックエンド、低 VRAM 向け GGUF 対応）**  
-   ([GitHub](https://github.com/leejet/stable-diffusion.cpp?utm_source=chatgpt.com))
+   ([GitHub](https://github.com/leejet/stable-diffusion.cpp))
 
 大半のユーザーには **ComfyUI** が最適なので、本ガイドは ComfyUI ワークフローをもとに説明を進めます。
 
@@ -75,18 +75,18 @@ Z-Image は近年のモデルとしては軽量な部類ですが、ローカル
 - **ストレージ：** モデルファイル用に数 GB の空き容量  
 - **ドライバ / CUDA：** 最新版推奨  
 - **Python / Git：** ComfyUI のセットアップに必要  
-  ([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+  ([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 もし GPU が弱くローカル実行が難しい場合は、  
 **「クラウド GPU + ComfyUI」**（例：RunPod）を利用する選択肢もあります。  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ---
 
 ## 2. ComfyUI のインストール（簡易版）
 
 ComfyUI は、Stable Diffusion および最新画像モデルのための **ノードベース UI** として広く普及しています。  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ### 基本的なインストール手順
 
@@ -104,7 +104,7 @@ ComfyUI は、Stable Diffusion および最新画像モデルのための **ノ�
 
 次に、**Z-Image Turbo のモデルファイル**を ComfyUI に読み込ませます。  
 公式の ComfyUI 例では、各ファイルの設置場所が明確に案内されています：  
-([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 ### 必要なファイル（ComfyUI_examples 準拠）
 
@@ -129,7 +129,7 @@ ComfyUI は、Stable Diffusion および最新画像モデルのための **ノ�
 
 モデルだけでは動かず、**ワークフロー JSON ファイル**を読み込む必要があります。  
 これには適切なノード構成と接続情報が含まれています。  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ### ワークフロー読み込み手順
 
@@ -226,4 +226,4 @@ Z-Image Turbo は **高速推論を目指したモデル**で、GPU によって
 * Z-Image Turbo は **速度・画質・VRAM 消費のバランスに優れた軽量高速モデル**
 * ComfyUI を用いれば、**高速・プライベート・ローカル完結の制作環境**を構築でき、
   ブログのサムネイル、SNS 用画像、クリエイティブ制作に幅広く活用できます。
-  ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+  ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))

@@ -15,10 +15,10 @@ In 2025, **Z-Image Turbo** has rapidly gained attention across the AI community.
 Because it runs locally on your own PC—without cloud costs or login requirements—it enables **fast, high-quality, privacy-preserving image generation**.
 
 Z-Image is a **6B-parameter image generation foundation model** released by Alibaba researchers, capable of producing high-quality images from text prompts and supporting editing and retouching workflows.  
-([Hugging Face](https://huggingface.co/papers/2511.22699?utm_source=chatgpt.com))
+([Hugging Face](https://huggingface.co/papers/2511.22699))
 
 This guide explains **how to install and use Z-Image locally without account signup**, focusing on the most popular setup: **ComfyUI + Z-Image Turbo**.  
-([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 ![z-image](/assets/img/post/z-image-tutorial.png)
 
@@ -30,22 +30,22 @@ Here are the core strengths of the Z-Image / Z-Image Turbo family:
 
 - **6B-parameter Single-Stream Diffusion Transformer (S3-DiT)**  
   → A unified architecture that processes text, image conditions, and noise in a single sequence, resulting in **high performance and fast inference for its size**.  
-  ([Tongyi Mai](https://tongyi-mai.github.io/Z-Image-blog/?utm_source=chatgpt.com))
+  ([Tongyi Mai](https://tongyi-mai.github.io/Z-Image-blog/))
 
 - **Z-Image Turbo = distilled version of Z-Image**  
   → Reduces NFEs (steps) while maintaining quality, delivering **strong results with only ~8 steps**.  
-  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 - **Consumer-GPU friendly**  
   → Designed to run comfortably on GPUs with ~16GB VRAM, and through optimized engines (e.g., stable-diffusion.cpp), **even 4GB VRAM setups can run Z-Image**.  
-  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 - **Strong photorealism + excellent text rendering**  
   → Performs well for posters, banners, and product mockups, especially in English/Chinese text rendering.  
-  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 In short: **Z-Image offers one of the best speed/quality/VRAM trade-offs among modern local image-generation models.**  
-([Stable Diffusion Art](https://stable-diffusion-art.com/z-image-wan-2-2/?utm_source=chatgpt.com))
+([Stable Diffusion Art](https://stable-diffusion-art.com/z-image-wan-2-2/))
 
 ---
 
@@ -54,10 +54,10 @@ In short: **Z-Image offers one of the best speed/quality/VRAM trade-offs among m
 Since Z-Image is a *model*, not a service, you need to choose a UI/engine for inference. The two most common methods are:
 
 1. **ComfyUI + Z-Image Turbo (most user-friendly, node-based interface)**  
-   ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+   ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 2. **stable-diffusion.cpp + Z-Image (C++ backend, GGUF support for low VRAM)**  
-   ([GitHub](https://github.com/leejet/stable-diffusion.cpp?utm_source=chatgpt.com))
+   ([GitHub](https://github.com/leejet/stable-diffusion.cpp))
 
 For most readers, **ComfyUI** is the easiest option, so the detailed instructions below follow the ComfyUI workflow.
 
@@ -74,18 +74,18 @@ Z-Image is lightweight for a modern diffusion model, but your system still needs
 - **Storage:** Several GB free for model files  
 - **Drivers / CUDA:** Keep versions up to date  
 - **Python / Git:** Required for ComfyUI setup (Windows installer scripts also available)  
-  ([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+  ([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 If your GPU is too weak or local setup is difficult,  
 **“Cloud GPU + ComfyUI”** (e.g., RunPod) is a popular alternative.  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ---
 
 ## 2. Installing ComfyUI (Quick Guide)
 
 ComfyUI is a **node-based interface for Stable Diffusion and modern image models**, widely adopted for flexibility and performance.  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ### Basic installation flow
 
@@ -103,7 +103,7 @@ ComfyUI is a **node-based interface for Stable Diffusion and modern image models
 
 Next, load the **Z-Image Turbo model** into ComfyUI.  
 The official ComfyUI examples describe exactly where each file must be placed:  
-([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 ### Required files (from ComfyUI_examples)
 
@@ -122,7 +122,7 @@ According to the examples, Z-Image Turbo typically needs:
    - Path: `ComfyUI/models/vae/`
 
 Many of these files are linked on the ComfyUI example page or Hugging Face.  
-([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 A table summarizing **download links + destination folders** is helpful for readers.
 
@@ -135,7 +135,7 @@ Models alone won’t run—you must load a **workflow JSON** containing the corr
 Tutorials and the official example repo usually provide a file like:  
 `z_image_turbo_workflow.json`  
 You can open it in ComfyUI via: **Load → Select JSON**  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ### Workflow loading steps
 
@@ -146,7 +146,7 @@ You can open it in ComfyUI via: **Load → Select JSON**
 5. A full graph with Z-Image Turbo nodes should appear—ready to run
 
 In the NextDiffusion tutorial, the workflow already includes samplers, VAE wiring, recommended settings, etc., so **you only need to type a prompt and click run**.  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ---
 
@@ -157,7 +157,7 @@ Once the workflow is loaded, you're ready to generate images.
 ### 1) Enter a prompt
 
 In the Z-Image Turbo node or the text input node:  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ```
 minimalist flat illustration, bright pastel colors, a humanoid robot and a human engineer working together in a clean futuristic office, soft lighting, 16:9
@@ -167,7 +167,7 @@ minimalist flat illustration, bright pastel colors, a humanoid robot and a human
 ### 2) Check the key parameters
 
 Default settings typically include:  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 - **Steps:** ~6–10  
 - **Resolution:** 768×768 or 1024×576 (16:9)  
@@ -179,10 +179,10 @@ A **“recommended settings table”** is a great addition for blog readers.
 ### 3) Click Queue / Generate
 
 Use *Queue Prompt* or the workflow’s run button.  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 Z-Image Turbo aims for **very fast inference**, often finishing in **a few seconds** depending on your GPU.  
-([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 ### 4) Review & save
 
@@ -223,7 +223,7 @@ To summarize:
 - **stable-diffusion.cpp** is a C++ inference engine  
 - Includes Z-Image-supported code paths  
 - Allows **Z-Image to run on GPUs with ~4GB VRAM**  
-  ([GitHub](https://github.com/leejet/stable-diffusion.cpp?utm_source=chatgpt.com))
+  ([GitHub](https://github.com/leejet/stable-diffusion.cpp))
 
 This setup is CLI/GGUF-based and is best for readers with **very low-spec hardware**.
 
@@ -236,4 +236,4 @@ In summary:
 - Z-Image is an **open-source image generation foundation model**  
 - Z-Image Turbo provides **excellent speed/quality/VRAM efficiency**  
 - With ComfyUI, you can build a **fast, private, local image-generation workflow** for blog thumbnails, SNS content, and creative work  
-  ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+  ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))

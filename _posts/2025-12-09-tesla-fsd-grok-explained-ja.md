@@ -33,17 +33,17 @@ Tesla FSDもxAIのGrokもイーロン・マスクが率いるAIプロジェク�
 まず、この誤解がどこから生まれたのかを整理する必要があります。
 
 Teslaの **FSD（Full Self-Driving）** は、8台のカメラからの映像を用いて周囲環境を把握し、走行シーンを理解し、ステアリング・加速・減速をリアルタイムで制御する自動運転システムです。いわばクルマの「走行脳」であり、**Tesla AI Day**でも複数回アーキテクチャが説明されています。
-参考: [https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com](https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com)
+参考: [https://www.armand.so/recap-tesla-ai-day-2022/](https://www.armand.so/recap-tesla-ai-day-2022/)
 
 一方、イーロン・マスクが2023年に立ち上げたxAIは、GPTやGeminiに対抗する大規模言語モデル **Grok** を開発しています。Grokは文章要約、コーディング支援、リアルタイム情報の処理などに優れたLLMであり、Grok-1.5 → Grok-2 → Grok-4と急速に進化しています。
-参考: [https://x.ai/news/grok-1.5?utm_source=chatgpt.com](https://x.ai/news/grok-1.5?utm_source=chatgpt.com)
+参考: [https://x.ai/news/grok-1.5](https://x.ai/news/grok-1.5)
 
 混乱が生まれた理由はシンプルで、
 
 * どちらもマスク率いるAIプロジェクト
 * 両方とも“AI”とひとまとめにされがち
 * 2025年以降、Tesla車のインフォテインメントにGrokが搭載され始めた
-  参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com)
+  参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29](https://en.wikipedia.org/wiki/Grok_%28chatbot%29)
 
 つまり、車内に“Grok”のアイコンが表示され、同時に車は“FSD”で自動運転しているため、**「同じAIを使っているのでは？」** という誤解が広がったわけです。
 
@@ -56,16 +56,16 @@ Teslaの **FSD（Full Self-Driving）** は、8台のカメラからの映像を
 Tesla FSDの中枢は、**映像だけで世界を理解し、走行判断を下すディープラーニングシステム**です。
 
 初期のFSDは **HydraNet** と呼ばれるマルチタスクネットワークを使い、レーン、車両、信号、歩行者などをそれぞれ検出し、その上でA*やモンテカルロ木探索などの古典的アルゴリズムで経路計画を行っていました。
-参考: [https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/?utm_source=chatgpt.com](https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/?utm_source=chatgpt.com)
+参考: [https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/](https://www.thinkautonomous.ai/blog/tesla-end-to-end-deep-learning/)
 
 2022年には **Occupancy Network（オキュパンシーネットワーク）** を発表し、2Dのカメラ画像から3D空間のボクセル表現を生成。
 物体、自由空間、遮蔽領域まで予測する“周囲環境のデジタルツイン”を作り出します。
 これにより、LiDARなしでLiDAR級の環境認識精度を実現しています。
-参考: [https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com](https://www.armand.so/recap-tesla-ai-day-2022/?utm_source=chatgpt.com)
+参考: [https://www.armand.so/recap-tesla-ai-day-2022/](https://www.armand.so/recap-tesla-ai-day-2022/)
 
 さらに2023〜2025年のFSD V12〜V13では、**完全エンドツーエンド型**へ進化。
 映像 → 認識 → 計画 → 制御 といった従来の分離型構造ではなく、ひとつの巨大ネットワークが映像を入力し、出力としてステアリング・アクセル・ブレーキを直接生成します。
-参考: [https://arxiv.org/html/2401.08658v1?utm_source=chatgpt.com](https://arxiv.org/html/2401.08658v1?utm_source=chatgpt.com)
+参考: [https://arxiv.org/html/2401.08658v1](https://arxiv.org/html/2401.08658v1)
 
 FSDの内部構造は大きく分けて、
 
@@ -84,7 +84,7 @@ FSDの内部構造は大きく分けて、
 Grokは会話、推論、要約、コード生成、画像理解などを行う **大規模言語モデル（LLM）** です。
 
 Grok-1 → 1.5 → 2 → 4 と急速に進化し、MMLU、GPQA、MATHなどのベンチマークで性能を向上させています。
-参考: [https://x.ai/blog/grok-2?utm_source=chatgpt.com](https://x.ai/blog/grok-2?utm_source=chatgpt.com)
+参考: [https://x.ai/blog/grok-2](https://x.ai/blog/grok-2)
 
 2025年時点でGrokが導入されているのは、
 
@@ -94,7 +94,7 @@ Grok-1 → 1.5 → 2 → 4 と急速に進化し、MMLU、GPQA、MATHなどの�
 * モバイルアプリ・Webアプリ
 
 など、**“文章と言語を扱う仕事”** が中心です。
-参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com)
+参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29](https://en.wikipedia.org/wiki/Grok_%28chatbot%29)
 
 Grokが扱うのは、
 
@@ -144,7 +144,7 @@ Grok：数百ミリ秒〜数秒の思考でも問題なし
 
 Waymo、Tesla、NVIDIA、Huaweiなど、自動運転企業は2023〜2025年の間、
 すべて **「ビジョン特化のエンドツーエンド運転モデル」** を採用しており、LLMを運転の中心に置いた企業は存在しません。
-参考: [https://arxiv.org/html/2401.08658v1?utm_source=chatgpt.com](https://arxiv.org/html/2401.08658v1?utm_source=chatgpt.com)
+参考: [https://arxiv.org/html/2401.08658v1](https://arxiv.org/html/2401.08658v1)
 
 ---
 
@@ -157,7 +157,7 @@ GrokがFSDの“走行コア”になる可能性はほぼゼロですが、
 
 2025年には、Tesla車のインフォテインメントにGrokが搭載され始めましたが、
 これはあくまで **車内アシスタント** としてであり、車両の制御は一切行いません。
-参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=chatgpt.com)
+参考: [https://en.wikipedia.org/wiki/Grok_%28chatbot%29](https://en.wikipedia.org/wiki/Grok_%28chatbot%29)
 
 将来の可能性としては：
 

@@ -16,10 +16,10 @@ og_description: "学习如何在本地运行 Z-Image Turbo，而不依赖任何�
 由于它可以完全在本地电脑上运行——不需要云端计费，也不需要账号登录——所以能够实现**快速、高画质、同时保护隐私的图像生成**。
 
 Z-Image 是由阿里巴巴系研究团队发布的 **60 亿参数图像生成基础模型（foundation model）**，可以根据文本提示（prompt）生成高质量图片，并支持编辑、润色等工作流程。  
-([Hugging Face](https://huggingface.co/papers/2511.22699?utm_source=chatgpt.com))
+([Hugging Face](https://huggingface.co/papers/2511.22699))
 
 本指南将带你了解**如何在本地安装并使用 Z-Image，而无需注册任何网站账户**，重点介绍目前最常用的组合：**ComfyUI + Z-Image Turbo**。  
-([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 ![z-image](/assets/img/post/z-image-tutorial.png)
 
@@ -31,22 +31,22 @@ Z-Image 是由阿里巴巴系研究团队发布的 **60 亿参数图像生成基
 
 - **60 亿参数的单流扩散 Transformer 结构（Single-Stream Diffusion Transformer，S3-DiT）**  
   → 采用统一架构，将文本、图像条件和噪声整合到同一序列中进行处理，因此在 **模型规模相对较小的前提下，仍能提供高性能和快速推理速度**。  
-  ([Tongyi Mai](https://tongyi-mai.github.io/Z-Image-blog/?utm_source=chatgpt.com))
+  ([Tongyi Mai](https://tongyi-mai.github.io/Z-Image-blog/))
 
 - **Z-Image Turbo = Z-Image 的蒸馏版本**  
   → 在保持画质的同时压缩 NFE（步数），实现 **大约 8 步就能生成效果不错的图像**。  
-  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 - **对消费级 GPU 友好**  
   → 官方设计目标是在约 16GB VRAM 的显卡上流畅运行；结合优化引擎（如 stable-diffusion.cpp），**甚至 4GB 显存的环境也能找到可用实现**。  
-  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 - **写实效果与文字渲染能力强**  
   → 在海报、横幅、产品 Mockup 等场景中表现出色，尤其擅长英语 / 中文文字的绘制。  
-  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+  ([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 简单来说：**在本地图像生成模型中，Z-Image 在速度、画质与显存占用之间提供了极佳的平衡。**  
-([Stable Diffusion Art](https://stable-diffusion-art.com/z-image-wan-2-2/?utm_source=chatgpt.com))
+([Stable Diffusion Art](https://stable-diffusion-art.com/z-image-wan-2-2/))
 
 ---
 
@@ -55,10 +55,10 @@ Z-Image 是由阿里巴巴系研究团队发布的 **60 亿参数图像生成基
 Z-Image 是一个 *模型*，而不是云服务，因此你需要选择一个前端 UI / 推理引擎来运行它。最常见的两种方式是：
 
 1. **ComfyUI + Z-Image Turbo（最适合多数用户的节点式界面）**  
-   ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+   ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 2. **stable-diffusion.cpp + Z-Image（C++ 后端，支持 GGUF，适合低显存环境）**  
-   ([GitHub](https://github.com/leejet/stable-diffusion.cpp?utm_source=chatgpt.com))
+   ([GitHub](https://github.com/leejet/stable-diffusion.cpp))
 
 对大部分读者来说，**ComfyUI** 是最容易上手的方案，所以下面的详细步骤都会基于 ComfyUI 工作流来讲解。
 
@@ -75,18 +75,18 @@ Z-Image 是一个 *模型*，而不是云服务，因此你需要选择一个前
 - **存储空间：** 预留数 GB，用于存放模型文件  
 - **驱动 / CUDA：** 建议保持为较新版本  
 - **Python / Git：** 安装 ComfyUI 时需要（Windows 也可以使用官方脚本）  
-  ([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+  ([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 如果显卡性能较弱，或者本地部署有困难，  
 也可以选择 **“云端 GPU + ComfyUI”** 的方案（例如 RunPod 等）。  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ---
 
 ## 2. 安装 ComfyUI（快速版本）
 
 ComfyUI 是一个 **基于节点的 Stable Diffusion / 现代图像模型前端界面**，以灵活、性能好而被广泛使用。  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ### 基本安装流程
 
@@ -104,7 +104,7 @@ ComfyUI 是一个 **基于节点的 Stable Diffusion / 现代图像模型前端�
 
 接下来，需要把 **Z-Image Turbo 模型** 加载进 ComfyUI。  
 官方的 ComfyUI 示例文档详细说明了每个文件应该放在什么位置：  
-([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 ### 必需文件（以 ComfyUI_examples 为准）
 
@@ -123,7 +123,7 @@ ComfyUI 是一个 **基于节点的 Stable Diffusion / 现代图像模型前端�
    - 路径：`ComfyUI/models/vae/`
 
 大多数文件都可以在 ComfyUI 示例页面或 Hugging Face 上找到下载链接。  
-([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
 
 在博客中，你可以整理一张表，把 **下载链接 + 目标文件夹** 列出来，读者会非常好跟。
 
@@ -136,7 +136,7 @@ ComfyUI 是一个 **基于节点的 Stable Diffusion / 现代图像模型前端�
 教程和官方示例仓库一般会提供类似：  
 `z_image_turbo_workflow.json` 的文件。  
 在 ComfyUI 中通过 **Load → 选择 JSON 文件** 就能打开。  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ### 工作流加载步骤
 
@@ -147,7 +147,7 @@ ComfyUI 是一个 **基于节点的 Stable Diffusion / 现代图像模型前端�
 5. 看到一整张包含 Z-Image Turbo 节点的图形工作流后，即表示已就绪
 
 在 NextDiffusion 的教程中，该工作流已经预先配置好了采样器、VAE 连接以及推荐设置，所以**你只需要填好 prompt 然后点击运行即可**。  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ---
 
@@ -158,7 +158,7 @@ ComfyUI 是一个 **基于节点的 Stable Diffusion / 现代图像模型前端�
 ### 1）输入 Prompt
 
 在 Z-Image Turbo 节点或对应的文本输入节点中输入提示词：  
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 ```text
 minimalist flat illustration, bright pastel colors, a humanoid robot and a human engineer working together in a clean futuristic office, soft lighting, 16:9
@@ -167,7 +167,7 @@ minimalist flat illustration, bright pastel colors, a humanoid robot and a human
 ### 2）检查关键参数
 
 默认设置通常包括：
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 * **Steps：** 约 6–10
 * **分辨率：** 768×768 或 1024×576（16:9）
@@ -179,10 +179,10 @@ minimalist flat illustration, bright pastel colors, a humanoid robot and a human
 ### 3）点击 Queue / Generate
 
 使用 *Queue Prompt* 或工作流中的运行按钮即可开始推理。
-([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui?utm_source=chatgpt.com))
+([Next Diffusion](https://www.nextdiffusion.ai/tutorials/z-image-turbo-fast-uncensored-image-generation-comfyui))
 
 Z-Image Turbo 的目标就是 **极快的推理速度**，通常在合适的 GPU 上 **几秒内就能出图**。
-([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image?utm_source=chatgpt.com))
+([Hugging Face](https://huggingface.co/docs/diffusers/main/api/pipelines/z_image))
 
 ### 4）查看并保存结果
 
@@ -226,7 +226,7 @@ Z-Image Turbo 的目标就是 **极快的推理速度**，通常在合适的 GPU
 * **stable-diffusion.cpp** 是一个 C++ 实现的扩散模型推理引擎
 * 内置对 Z-Image 的支持代码与配置
 * 让 **约 4GB 显存的设备也有机会跑起 Z-Image**
-  ([GitHub](https://github.com/leejet/stable-diffusion.cpp?utm_source=chatgpt.com))
+  ([GitHub](https://github.com/leejet/stable-diffusion.cpp))
 
 这类环境通常以命令行 / 轻量 GUI 为主，更适合**硬件配置非常有限**的用户。
 
@@ -239,4 +239,4 @@ Z-Image Turbo 的目标就是 **极快的推理速度**，通常在合适的 GPU
 * Z-Image 是一个 **开源的图像生成基础模型**
 * Z-Image Turbo 在 **速度、画质和显存占用** 之间做到了非常好的平衡
 * 结合 ComfyUI，你可以在本地搭建一套 **快速、私密的 AI 图像生成工作流**，为博客封面、社交媒体内容以及各种创意项目提供高质量素材
-  ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/?utm_source=chatgpt.com))
+  ([Comfy Anonymous](https://comfyanonymous.github.io/ComfyUI_examples/z_image/))
