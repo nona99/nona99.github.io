@@ -1,13 +1,6 @@
 ---
 title: 2025年のAIミーム完全解説 — なぜ爆発的に流行したのか、どう作られたのか、そして経済効果はどこまで来たのか
 category: AIツール
-tags:
-- イタリアンBrainrot
-- AImemes
-- AI文化
-- バイラルAI
-- ジェネレーションAlpha
-- AIマーケティング
 date: 2025-12-08 09:00:00 +0900
 lang: ja-JP
 permalink: /ja/ai-generated-memes-became-global-phenomenon/

@@ -3,7 +3,6 @@ title: "Kling（Kling O1）新手指南：它是什么，“多模态”到底�
 permalink: /zh/kling-o1-beginners-guide/
 date: 2025-12-16 12:00:00 +0900
 categories: ["AI 工具", "生成式 AI"]
-tags: ["Kling", "Kling O1", "视频生成", "文本生成视频", "图像生成视频", "多模态 AI", "AI 视频", "新手指南", "提示词", "视频编辑"]
 lang: zh
 description: "用新手也能理解的方式解释 Kling 与新发布的 Kling O1：它能做什么、为什么“多模态”很关键，以及如何用一套实用流程稳定产出干净的 3–10 秒短镜头，而不是陷入无止境重抽。"
 

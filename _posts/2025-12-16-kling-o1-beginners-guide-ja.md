@@ -3,7 +3,6 @@ title: "Kling（Kling O1）初心者ガイド：何ができる？「マルチ�
 permalink: /ja/kling-o1-beginners-guide/
 date: 2025-12-16 12:00:00 +0900
 categories: ["AIツール", "生成AI"]
-tags: ["Kling", "Kling O1", "動画生成", "テキストから動画", "画像から動画", "マルチモーダルAI", "AI動画", "初心者ガイド", "プロンプト", "動画編集"]
 lang: ja-JP
 description: "Klingと新しく登場したKling O1を初心者向けに解説。何ができるのか、なぜ「マルチモーダル」が重要なのか、そして無限リロールにハマらずに3〜10秒の短いショットを安定して作るための実践的ワークフローをまとめます。"
 

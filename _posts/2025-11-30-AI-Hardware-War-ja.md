@@ -4,12 +4,6 @@ permalink: /ja/ai-hardware-war/
 title: Apple vs. Samsung — 次の10年を決めるAIハードウェア戦争
 categories:
   - AIハードウェア
-tags:
-  - apple
-  - samsung
-  - AIChip
-  - AIHardware
-  - AItrend
 ---
 
 

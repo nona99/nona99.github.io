@@ -3,7 +3,6 @@ title: "为什么 Flow 会成为 2025 年短视频创作者最先拥抱的 AI �
 description: "Flow 的爆红速度甚至超过 Runway 和 Pika。为什么 TikTok、Reels 和 Shorts 的创作者率先选择它？本文深入分析 Flow 如何完美契合短视频结构、情绪化美学和创作者工作流。"
 date: 2025-12-11 12:00:00 +0900
 categories: [AI Tool]
-tags: [flow,ai视频生成,短视频创作,tiktok视频,ai视频工具,google-flow,pikalabs,runway,ai内容创作]
 permalink: /zh/flow-shortform-ai/
 lang: zh
 ---

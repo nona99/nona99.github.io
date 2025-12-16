@@ -4,13 +4,6 @@ lang: ja-JP
 permalink: /ja/ai-in-finance/
 category: 
 - AIトレンド
-tags:
-- FinTech
-- AIトレーディング
-- ロボアドバイザー
-- デジタルバンキング
-- ウェルステック
-- AMLテック
 date: 2025-12-10 09:00:00 +0900
 ---
 

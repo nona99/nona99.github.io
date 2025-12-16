@@ -4,14 +4,6 @@ lang: zh
 permalink: /zh/ai-integration-in-medical-systems/
 category: 
 - AI趋势
-tags:
-- 医疗AI
-- 医疗健康
-- 数字病理
-- 精准医疗
-- Owkin
-- GE Healthcare
-- Siemens Healthineers
 date: 2025-12-08 12:00:00 +0900
 ---
 

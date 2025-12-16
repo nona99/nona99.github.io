@@ -3,7 +3,6 @@ title: "GPT-5からGPT-5.2へ：OpenAIが更新を加速した理由（Gemini 3�
 permalink: /ja/gpt-5-2-timeline
 date: 2025-12-16 09:00:00 +0900
 categories: ["AIトレンド", "生成AI"]
-tags: ["GPT-5.2", "GPT-5", "GPT-5.1", "ChatGPT", "OpenAI", "Gemini 3", "Google Gemini", "AI競争", "長いコンテキスト", "ツール利用", "マルチステップ", "推論", "AIエージェント", "Code Red", "2025 AI"]
 lang: ja-JP
 description: "GPT-5→5.1→5.2の流れを時系列で整理し、なぜGPT-5.2が短期間で登場したのか、その背景（Gemini 3の進化と報道されたOpenAIの“Code Red”）まで含めて解説します。焦点は“長い文脈＋ツール実行＋多段作業の完走力”です。"
 

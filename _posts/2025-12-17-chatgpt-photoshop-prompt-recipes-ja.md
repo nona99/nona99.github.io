@@ -3,7 +3,6 @@ title: "プロンプトを変えるだけで結果が変わる：ChatGPT Photosh
 permalink: /ja/chatgpt-photoshop-prompt-recipes/
 date: 2025-12-17 12:00:00 +0900
 categories: ["AI Tools", "Creative Tools"]
-tags: ["ChatGPT","Photoshop","Adobe","Adobe Express","Adobe Acrobat","AI image editing","prompting","prompt recipes","image retouching","background removal","thumbnail design","Apps in ChatGPT","Connectors","creator workflow","content creation"]
 lang: ja-JP
 description: "ChatGPTでPhotoshopを使うためのコピペ用プロンプトレシピ20選。背景整理、トーン調整、レタッチ、サムネ最適化までを実用的にまとめ、接続設定の要点と“効き直し”の修正フレーズも掲載します。"
 

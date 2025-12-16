@@ -3,7 +3,6 @@ title: "如何在本地运行 Z-Image Turbo：面向 ComfyUI 用户的完整指�
 permalink: /zh/z-image-local-guide/
 date: 2025-12-14 09:00:00 +0900
 categories: ["AI Tools", "Image Generation"]
-tags: ["Z-Image", "Z-Image Turbo", "ComfyUI", "Local AI", "Diffusion Models", "AI Image Generation", "Tutorial"]
 lang: zh
 description: "一步一步教你如何在本地通过 ComfyUI 安装并运行 Z-Image Turbo，涵盖模型文件、环境配置、工作流加载以及图片生成流程。"
 

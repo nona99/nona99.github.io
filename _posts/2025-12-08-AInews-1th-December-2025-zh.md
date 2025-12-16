@@ -4,17 +4,6 @@ lang: zh
 permalink: /zh/AInews-1th-December-2025/
 category:
 - AI趋势
-tags:
-- AI新闻
-- AI趋势
-- 人工智能
-- 大模型
-- OpenAI
-- 苹果AI
-- 字节跳动
-- 英伟达
-- AI监管
-- AI安全
 date: 2025-12-08 09:00:00 +0900
 ---
 

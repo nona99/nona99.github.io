@@ -3,7 +3,6 @@ title: "将AI集成到现有工作工具：工作流优化实战手册"
 permalink: /zh/ai-tools-workflow-integration-manual/
 date: 2025-12-15 12:00:00 +0900
 categories: ["AI效率", "工作流自动化"]
-tags: ["AI自动化","工作流优化","工具集成","Google Workspace","Google Drive","Gemini","Slack","Jira","Asana","Gmail自动化","日历工作流","n8n","Zapier","Make","知识管理"]
 lang: zh
 description: "别再“多加一个AI工具”。学习如何把AI嵌入你已经在用的工作流中——文档、邮件、日历、聊天与工单——让工作更快、更干净、更可复用。"
 image: "/assets/img/post/ai-workflow-integration.png"

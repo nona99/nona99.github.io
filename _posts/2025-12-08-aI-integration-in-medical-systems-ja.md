@@ -4,14 +4,6 @@ lang: ja-JP
 permalink: /ja/ai-integration-in-medical-systems/
 category: 
 - AIトレンド
-tags:
-- ヘルスケアAI
-- 医療AI
-- デジタルパソロジー
-- 精密医療
-- Owkin
-- GE Healthcare
-- Siemens Healthineers
 date: 2025-12-08 12:00:00 +0900
 ---
 

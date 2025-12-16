@@ -3,8 +3,6 @@ title: "Gemini AI 与 ChatGPT：2025 年搜索趋势揭示了什么"
 permalink: /zh/gemini-vs-chatgpt-search-trends-2025/
 date: 2025-12-14 12:10:00 +0900
 categories: ["AI Trends", "Generative AI"]
-tags:
-  ["Gemini AI", "ChatGPT", "AI Search Trends", "2025 Trends", "Google AI", "OpenAI", "Multimodal AI", "AI Ecosystem", "Tech Analysis"]
 lang: zh
 description: "深入分析 Gemini AI 与 ChatGPT 在 2025 年的全球搜索趋势，揭示关注度、使用方式与生态系统影响之间的差异，以及这些差异对 AI 市场的真正意义。"
 image: "/assets/img/post/gemini-chatgpt-compare.png"

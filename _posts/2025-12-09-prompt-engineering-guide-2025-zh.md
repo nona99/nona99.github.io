@@ -3,20 +3,6 @@ title: "2025 Prompt Engineering 全面指南：优秀提示词如何彻底改变
 description: "一份面向 2025 的 Prompt Engineering 全面指南——如何为写作、图像生成、视频生成撰写高质量提示词，为何英文提示词更稳定，并附带可直接使用的实用示例。"
 date: 2025-12-09 00:00:00 +0900
 categories: [AI, Prompt Engineering]
-tags:
-  - 提示词工程
-  - prompt-engineering
-  - AI提示词
-  - 生成式AI
-  - chatgpt
-  - gemini
-  - AI内容创作
-  - AI生产力
-  - 图像生成
-  - 视频生成
-  - AI指南
-  - AI使用技巧
-  - 2025AI趋势
 image: "/assets/img/post/prompt.png"
 permalink: /zh/prompt-engineering-guide-2025/
 lang: zh

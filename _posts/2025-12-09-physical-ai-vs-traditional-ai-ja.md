@@ -4,13 +4,6 @@ lang: ja-JP
 permalink: /ja/physical-ai-vs-traditional-ai/
 category:
 - AIトレンド
-tags:
-- PhysicalAI
-- リアルワールドAI
-- ヒューマノイド
-- AIエンジニアリング
-- スマートファクトリー
-- AI技術
 date: 2025-12-09 09:00:00 +0900
 ---
 

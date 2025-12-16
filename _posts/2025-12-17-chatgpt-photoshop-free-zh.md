@@ -3,7 +3,6 @@ title: "在 ChatGPT 里免费使用 Photoshop—从 Adobe 集成到“应用枢�
 permalink: /zh/chatgpt-photoshop-free/
 date: 2025-12-17 09:00:00 +0900
 categories: ["AI 工具", "创意工具"]
-tags: ["ChatGPT", "Photoshop", "Adobe", "Adobe Express", "Adobe Acrobat", "AI 图像编辑", "Apps in ChatGPT", "Connectors", "工作流", "内容创作"]
 lang: zh
 description: "一篇面向大众的实用指南：如何在 ChatGPT 中连接并使用 Adobe Photoshop、Express 与 Acrobat，了解“免费使用”究竟意味着什么、能做哪些事，以及为什么这标志着 ChatGPT 正在变成应用枢纽。"
 

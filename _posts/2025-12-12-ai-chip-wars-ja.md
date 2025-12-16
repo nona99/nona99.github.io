@@ -2,7 +2,6 @@
 title: "AIチップ戦争の真実：NVIDIAはGoogle TPUとAMDに追い抜かれるのか？"
 permalink: /ja/ai-chip-wars/
 categories: ["AIハードウェア"]
-tags: ["AIチップ", "NVIDIA", "Google TPU", "AMD", "AIハードウェア", "半導体", "生成AI"]
 lang: ja-JP
 description: "2025年に急速に変化するAI半導体市場を深く分析し、Google TPUとAMDの台頭によってNVIDIAの支配力が弱まっているのかを探ります。"
 image: "/assets/img/post/chip.png"

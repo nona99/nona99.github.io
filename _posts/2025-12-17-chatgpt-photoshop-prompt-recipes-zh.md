@@ -3,7 +3,6 @@ title: "只改提示词，结果就会变：20 个 ChatGPT Photoshop 提示词�
 permalink: /zh/chatgpt-photoshop-prompt-recipes/
 date: 2025-12-17 12:00:00 +0900
 categories: ["AI Tools", "Creative Tools"]
-tags: ["ChatGPT","Photoshop","Adobe","Adobe Express","Adobe Acrobat","AI image editing","prompting","prompt recipes","image retouching","background removal","thumbnail design","Apps in ChatGPT","Connectors","creator workflow","content creation"]
 lang: zh
 description: "可直接复制粘贴的 ChatGPT Photoshop 提示词配方：20 个实用提示词，涵盖背景清理、色调校正、修图与缩略图优化，并附连接设置要点与快速二次修正句。"
 

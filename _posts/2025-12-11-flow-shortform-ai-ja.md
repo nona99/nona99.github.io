@@ -3,7 +3,6 @@ title: "なぜ Flow は2025年、短尺クリエイターが最初に飛びつ�
 description: "Flow は Runway や Pika Labs を上回るスピードで短尺クリエイターに広まりました。TikTok・Reels・Shortsが Flow を選ぶ理由、短尺構造との相性、ワークフロー適性などを徹底解説します。"
 date: 2025-12-11 12:00:00 +0900
 categories: [AI Tool]
-tags: [flow,ai動画生成,短尺動画,tiktok動画,ai動画ツール,google-flow,runway,pikalabs,動画ai]
 permalink: /ja/flow-shortform-ai/
 lang: ja-JP
 ---

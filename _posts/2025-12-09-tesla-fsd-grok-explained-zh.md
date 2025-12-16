@@ -4,14 +4,6 @@ lang: zh
 permalink: /zh/tesla-fsd-grok-explained/
 category:
 - 人工智能趋势
-tags:
-- TeslaFSD
-- Grok
-- xAI
-- 自动驾驶AI
-- 视觉AI
-- ElonMusk
-- AI技术
 date: 2025-12-09 12:00:00 +0900
 ---
 

@@ -4,12 +4,6 @@ permalink: /zh/ai-hardware-war/
 title: Apple vs. Samsung — 决定未来十年的AI硬件之战
 categories:
   - AI硬件
-tags:
-  - apple
-  - samsung
-  - AIChip
-  - AI Hardware
-  - AI trend
 ---
 
 ## 2025：智能手机、可穿戴设备与PC全面进入权力重构期

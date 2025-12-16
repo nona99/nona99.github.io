@@ -4,8 +4,6 @@ lang: ja-JP
 permalink: "/ja/AInews-1th-December-2025/"
 category:
 - FinTech
-tags:
-- AI News
 date: '2025-12-08'
 ---
 

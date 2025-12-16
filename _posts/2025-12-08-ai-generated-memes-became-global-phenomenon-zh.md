@@ -1,13 +1,6 @@
 ---
 title: 2025年AI梗全面爆红 — 它们如何走红、如何制作，以及为何能成为新的经济力量
 category: AI工具
-tags:
-- 意大利Brainrot
-- AImemes
-- AI文化
-- 病毒式AI
-- GenAlpha
-- AI营销
 date: 2025-12-08 09:00:00 +0900
 lang: zh
 permalink: /zh/ai-generated-memes-became-global-phenomenon/

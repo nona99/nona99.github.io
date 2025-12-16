@@ -2,7 +2,6 @@
 title: 用Google Drive实现AI文档整理：Gemini驱动的4步工作流（查找→总结→分类→关联）
 date: 2025-12-15 09:00:00 +0900
 categories: ["AI效率", "Google Workspace"]
-tags: ["Google Drive","Google Workspace","Gemini","AI效率","文档管理","知识管理","工作流自动化","会议纪要","文件整理","团队协作","AI摘要","搜索技巧","数字整理","工作效率","办公工具"]
 lang: zh
 description: "别再依赖“记住放在哪个文件夹”。用Google Drive + Gemini把查找、总结、分类、关联自动化，把文档混乱变成可复用的资产。"
 permalink: /zh/ai-document-organization-google-drive/

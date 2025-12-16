@@ -2,7 +2,6 @@
 title: Google Driveで実現するAI文書整理術（Gemini活用）
 date: 2025-12-15 09:00:00 +0900
 categories: ["AI生産性", "Google Workspace"]
-tags: ["Google Drive","Google Workspace","Gemini","AI生産性","文書管理","ナレッジマネジメント","ワークフロー自動化","議事録","ファイル整理","チームコラボレーション","AI要約","検索のコツ","デジタル整理","業務効率化","オフィスツール"]
 lang: ja-JP
 description: "フォルダの記憶に頼るのをやめましょう。Google Drive + Geminiで、検索・要約・分類・リンクを自動化し、散らかった文書を再利用できる資産へ変える実践システムを解説します。"
 permalink: /ja/ai-document-organization-google-drive/

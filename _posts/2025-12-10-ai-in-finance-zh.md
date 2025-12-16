@@ -4,13 +4,6 @@ lang: zh
 permalink: /zh/ai-in-finance/
 category: 
 - AI趋势
-tags:
-- FinTech
-- AI交易
-- 智能投顾
-- 数字银行
-- 财富科技
-- AML技术
 date: 2025-12-10 09:00:00 +0900
 ---
 

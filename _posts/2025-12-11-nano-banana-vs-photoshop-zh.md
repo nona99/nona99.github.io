@@ -3,7 +3,6 @@ title: "Nano Banana Pro 能取代 Photoshop 吗？Google Gemini 3 引爆的创�
 description: "随着 Google 发布 Gemini 3 及其新一代图像模型 Nano Banana Pro，创作者群体掀起激烈讨论：Photoshop 还是否必需？本文深入解析 AI 原生图像编辑、Adobe 的应对策略，以及未来创作工作流的变化。"
 date: 2025-12-11 09:00:00 +0900
 categories: [AI Trend]
-tags: [nano-banana-pro,gemini-3,photoshop替代,adobe,ai图像编辑,创意ai工具,ai设计趋势]
 image: "/assets/img/post/adobe.png"
 permalink: /zh/nano-banana-vs-photoshop/
 lang: zh

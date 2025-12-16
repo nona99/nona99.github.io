@@ -2,7 +2,6 @@
 title: "免费生成式AI究竟能走多远？深入解析2025年免费AI生态的真实变革"
 date: 2025-12-13 09:00:00 +0900
 categories: ["AI 工具"]
-tags: ["免费AI", "ChatGPT Free", "Claude Free", "Google Gemini", "Perplexity AI", "AI图像生成", "Nano Banana", "AI写作工具", "AI生产力"]
 lang: zh
 description: "深度解析2025年快速演变的免费生成式AI生态——免费AI工具到底能做到什么？它们如何提升生产力？又将如何影响创作者与专业人士的工作方式？"
 permalink: /zh/free-ai-ecosystem-2025/

@@ -3,17 +3,6 @@ title: "AI電力危機：2025年、なぜAIが世界最大の電力消費者に�
 categories:
 - AI産業
 - エネルギー市場
-tags:
-- AI電力消費
-- AIデータセンター
-- GPU電力使用量
-- NVIDIA
-- Google
-- OpenAI
-- Anthropic
-- AMD
-- エネルギー危機
-- AIインフラ
 lang: ja-JP
 description: GPT-5.1、Claude 4.2、Gemini 3などのAIモデルが前例のない電力需要を引き起こし、電力市場、半導体設計、国家エネルギー政策をどのように再編しているのかを深く分析する。
 image: "/assets/img/post/ai-power-crisis.png"

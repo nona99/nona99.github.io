@@ -3,17 +3,6 @@ title: "AI电力危机：为什么2025年让AI成为全球最大的能源消耗�
 categories:
 - AI产业
 - 能源市场
-tags:
-- AI能耗
-- AI数据中心
-- GPU能耗
-- NVIDIA
-- Google
-- OpenAI
-- Anthropic
-- AMD
-- 能源危机
-- AI基础设施
 lang: zh
 description: 深度分析GPT-5.1、Claude 4.2、Gemini 3等模型如何引发前所未有的全球电力需求增长，并重塑电力市场、半导体设计与国家能源政策。
 image: "/assets/img/post/ai-power-crisis.png"

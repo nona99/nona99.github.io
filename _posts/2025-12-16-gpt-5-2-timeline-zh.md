@@ -3,7 +3,6 @@ title: "从 GPT-5 到 GPT-5.2：OpenAI 为何加速迭代（以及 Gemini 3 与�
 permalink: /zh/gpt-5-2-timeline
 date: 2025-12-16 09:00:00 +0900
 categories: ["AI 趋势", "生成式 AI"]
-tags: ["GPT-5.2", "GPT-5", "GPT-5.1", "ChatGPT", "OpenAI", "Gemini 3", "Google Gemini", "AI 竞争", "长上下文", "工具调用", "多步任务", "推理", "AI Agent", "Code Red", "2025 AI"]
 lang: zh
 description: "用时间线梳理 GPT-5 → 5.1 → 5.2 的关键变化，解释 GPT-5.2 为何来得这么快，并结合 Gemini 3 的推进与媒体报道的 OpenAI“Code Red”，看清这场竞争如何转向“长上下文 + 工具执行 + 多步完成”。"
 

@@ -4,13 +4,6 @@ lang: zh
 permalink: /zh/physical-ai-vs-traditional-ai/
 category:
 - 人工智能趋势
-tags:
-- PhysicalAI
-- 真实世界AI
-- 仿生机器人
-- AI工程
-- 智能工厂
-- AI技术
 date: 2025-12-09 09:00:00 +0900
 ---
 

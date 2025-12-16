@@ -2,7 +2,6 @@
 title: "AI芯片之争的真相：英伟达正被Google TPU和AMD赶超吗？"
 permalink: /zh/ai-chip-wars/
 categories: ["AI硬件"]
-tags: ["AI芯片", "NVIDIA", "Google TPU", "AMD", "AI硬件", "半导体", "生成式AI"]
 lang: zh
 description: "深入剖析2025年快速变化的AI半导体格局——探讨英伟达的主导地位是否正在被Google TPU与AMD的崛起所削弱。"
 image: "/assets/img/post/chip.png"
