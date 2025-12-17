@@ -9,6 +9,7 @@ image: "/assets/img/post/gemini-sheets-workflow.png"
 
 og_title: "Gemini in Sheets：面向真实工作的多步骤流程（表格 → 透视表 → 图表）"
 og_description: "把原始数据变成可决策的报告：表格、公式、透视表、条件格式、仪表板与三行结论——用 Google Sheets 的 Ask Gemini 完成。"
+og_image: "/assets/img/post/gemini-sheets-workflow.png"
 ---
 
 # Gemini in Sheets 多步骤工作流指南：用自然语言生成表格、透视表、图表与公式

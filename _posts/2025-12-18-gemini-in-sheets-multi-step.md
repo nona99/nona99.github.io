@@ -10,6 +10,7 @@ image: "/assets/img/post/gemini-sheets-workflow.png"
 
 og_title: "Gemini in Sheets: Multi-Step Workflow for Real Work (Tables → Pivots → Charts)"
 og_description: "Turn raw rows into decision-ready reporting—tables, formulas, pivots, conditional formatting, dashboards, and a 3-line takeaway—using Ask Gemini in Google Sheets."
+og_image: "/assets/img/post/ethics.png"
 ---
 
 # Gemini in Sheets Multi-Step Workflow Guide: Build Tables, Pivots, Charts, and Formulas with Natural Language

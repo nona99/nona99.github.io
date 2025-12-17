@@ -8,6 +8,7 @@ description: "Google Sheets の Gemini（Ask Gemini）を実務で使うため�
 image: "/assets/img/post/gemini-sheets-workflow.png"
 og_title: "Gemini in Sheets：実務向けマルチステップ運用（表→ピボット→グラフ）"
 og_description: "生データを意思決定できるレポートへ。表・数式・ピボット・条件付き書式・ダッシュボード・3行要約まで、Google Sheets の Ask Gemini で整える方法。"
+og_image: "/assets/img/post/gemini-sheets-workflow.png"
 ---
 
 # Gemini in Sheets マルチステップ作業ガイド：自然言語で表・ピボット・グラフ・数式を作る
