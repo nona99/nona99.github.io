@@ -1,6 +1,9 @@
 ---
 title: "AIとの会話は学習に使われる？個人情報を入力していい境界線"
 permalink: /ja/ai-chat-training-privacy-boundary/
+translations:
+  en: /ai-chat-training-privacy-boundary/
+  zh: /zh/ai-chat-training-privacy-boundary/
 date: 2025-12-20 09:00:00 +0900
 categories: ["AI基礎", "AIプライバシー", "生成AI"]
 lang: ja-JP

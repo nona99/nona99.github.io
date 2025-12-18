@@ -144,9 +144,26 @@
 
   {% include metadata-hook.html %}
 
-  {% if page.url == "/" or page.url == "/ja/" or page.url == "/zh/" %}
-    <link rel="alternate" hreflang="en" href="{{ site.url }}/" />
-    <link rel="alternate" hreflang="ja" href="{{ site.url }}/ja/" />
-    <link rel="alternate" hreflang="zh" href="{{ site.url }}/zh/" />
-  {% endif %}
+{%- assign base = site.url | default: "" -%}
+{%- assign page_lang = page.lang | default: "en" -%}
+
+{%- comment -%}
+hreflang alternates
+Requires: page.lang and page.translations in front matter
+{%- endcomment -%}
+
+{%- if page.layout == "post" or page.collection == "posts" or page.permalink -%}
+  {%- assign current_url = page.url | relative_url -%}
+  <link rel="alternate" hreflang="{{ page_lang }}" href="{{ base }}{{ current_url }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ base }}{{ current_url }}" />
+
+  {%- if page.translations -%}
+    {%- for t in page.translations -%}
+      {%- assign lang_code = t[0] -%}
+      {%- assign path = t[1] -%}
+      <link rel="alternate" hreflang="{{ lang_code }}" href="{{ base }}{{ path }}" />
+    {%- endfor -%}
+  {%- endif -%}
+{%- endif -%}
+
 </head>

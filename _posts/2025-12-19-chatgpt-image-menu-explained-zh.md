@@ -1,6 +1,9 @@
 ---
 title: "ChatGPT 图像菜单详解：新增了什么？与聊天式图像生成有何不同"
 permalink: /zh/chatgpt-image-menu-explained/
+translations:
+  ja: /ja/chatgpt-image-menu-explained/
+  en: /chatgpt-image-menu-explained/
 date: 2025-12-19 12:00:00 +0900
 categories: ["AI 工具", "生成式 AI"]
 lang: zh

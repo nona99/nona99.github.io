@@ -1,6 +1,9 @@
 ---
 title: "AI生成广告与图片：全球披露（标注）与伦理检查清单（大众必读）"
 permalink: /zh/ai-ads-ethics/
+translations:
+  ja: /ja/ai-ads-ethics/
+  en: /ai-ads-ethics/
 date: 2025-12-19 09:00:00 +0900
 categories: ["AI Ethics", "Media Literacy", "Digital Society"]
 lang: zh

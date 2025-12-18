@@ -1,6 +1,9 @@
 ---
 title: "NotebookLM职场用法：用内部文档与会议纪要生成「1页简报」"
 permalink: /zh/notebooklm-work-briefing/
+translations:
+  ja: /ja/notebooklm-work-briefing/
+  en: /notebooklm-work-briefing/
 date: 2025-12-18 09:00:00 +0900
 categories: ["AI Tools", "Productivity", "Workflows"]
 lang: zh

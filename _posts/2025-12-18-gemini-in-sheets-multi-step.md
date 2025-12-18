@@ -1,6 +1,9 @@
 ---
 title: "Gemini in Sheets Multi-Step Workflow Guide: Build Tables, Pivots, Charts, and Formulas with Natural Language"
 slug: "gemini-in-sheets-multi-step"
+translations:
+  ja: /ja/gemini-in-sheets-multi-step/
+  zh: /zh/gemini-in-sheets-multi-step/
 date: 2025-12-18 12:00:00 +0900
 categories: ["AI Tools", "Productivity", "Google Workspace"]
 tags: ["Gemini in Sheets","Google Sheets","Gemini","Google Workspace","Spreadsheet Automation","Data Analysis","Pivot Table","Conditional Formatting","Charts","Formulas","KPI Dashboard","Weekly Report","Work Automation","Productivity","AI Tools"]

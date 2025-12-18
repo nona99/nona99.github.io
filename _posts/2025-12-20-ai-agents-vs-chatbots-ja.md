@@ -1,6 +1,9 @@
 ---
 title: "なぜ今「AIエージェント」が注目されているのか ― チャットボットとの決定的な違い"
 permalink: /ja/ai-agents-vs-chatbots/
+translations:
+  en: /ai-agents-vs-chatbots/
+  zh: /zh/ai-agents-vs-chatbots/
 date: 2025-12-20 12:00:00 +0900
 categories: ["AI基礎", "AIトレンド", "生成AI"]
 tags: ["AIエージェント","チャットボット","AI自動化","生成AI","AI生産性","デジタルワーカー","AIツール","AIトレンド"]

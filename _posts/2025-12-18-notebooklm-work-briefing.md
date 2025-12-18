@@ -1,6 +1,9 @@
 ---
 title: "NotebookLM for Work: Turn Internal Docs & Meeting Notes Into 1-Page Briefings"
 slug: "notebooklm-work-briefing"
+translations:
+  ja: /ja/notebooklm-work-briefing/
+  zh: /zh/notebooklm-work-briefing/
 date: 2025-12-18 09:00:00 +0900
 categories: ["AI Tools", "Productivity", "Workflows"]
 tags: ["NotebookLM","Google NotebookLM","Google Workspace","meeting notes","briefing","executive summary","internal docs","Docs","Slides","Drive","Gemini"]

@@ -1,6 +1,9 @@
 ---
 title: "Is My AI Chat Used for Training? Where to Draw the Line on Personal Data"
 slug: "ai-chat-training-privacy-boundary"
+translations:
+  ja: /ja/ai-chat-training-privacy-boundary/
+  zh: /zh/ai-chat-training-privacy-boundary/
 date: 2025-12-20 09:00:00 +0900
 categories: ["AI Basics", "AI Privacy", "Generative AI"]
 tags: ["AI privacy","ChatGPT data","Gemini privacy","Claude privacy","Copilot privacy","AI training","personal data","AI safety","generative AI"]

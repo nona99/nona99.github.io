@@ -1,6 +1,9 @@
 ---
 title: "NotebookLM仕事術：社内資料と議事録から「1ページブリーフ」を作る方法"
 permalink: /ja/notebooklm-work-briefing/
+translations:
+  en: /notebooklm-work-briefing/
+  zh: /zh/notebooklm-work-briefing/
 date: 2025-12-18 09:00:00 +0900
 categories: ["AI Tools", "Productivity", "Workflows"]
 lang: ja-JP

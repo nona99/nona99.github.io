@@ -1,6 +1,9 @@
 ---
 title: "Gemini in Sheets マルチステップ作業ガイド：自然言語で表・ピボット・グラフ・数式を作る"
 permalink: /ja/gemini-in-sheets-multi-step/
+translations:
+  en: /gemini-in-sheets-multi-step/
+  zh: /zh/gemini-in-sheets-multi-step/
 date: 2025-12-18 12:00:00 +0900
 categories: ["AI Tools", "Productivity", "Google Workspace"]
 lang: ja-JP

@@ -1,6 +1,9 @@
 ---
 title: "我的 AI 对话会被用于训练吗？输入个人信息的安全边界"
 permalink: /zh/ai-chat-training-privacy-boundary/
+translations:
+  ja: /ja/ai-chat-training-privacy-boundary/
+  en: /ai-chat-training-privacy-boundary/
 date: 2025-12-20 09:00:00 +0900
 categories: ["AI基础", "AI隐私", "生成式AI"]
 lang: zh

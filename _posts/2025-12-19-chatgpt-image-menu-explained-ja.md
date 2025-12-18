@@ -1,6 +1,9 @@
 ---
 title: "ChatGPT 画像メニュー解説：何が新しく、従来のチャット型画像生成と何が違うのか"
 permalink: /ja/chatgpt-image-menu-explained/
+translations:
+  en: /chatgpt-image-menu-explained/
+  zh: /zh/chatgpt-image-menu-explained/
 date: 2025-12-19 12:00:00 +0900
 categories: ["AIツール", "生成AI"]
 lang: ja-JP

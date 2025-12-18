@@ -1,6 +1,9 @@
 ---
 title: "Why Everyone Is Talking About AI Agents — How They’re Different from Chatbots"
 slug: "ai-agents-vs-chatbots"
+translations:
+  ja: /ja/ai-agents-vs-chatbots/
+  zh: /zh/ai-agents-vs-chatbots/
 date: 2025-12-20 12:00:00 +0900
 categories: ["AI Basics", "AI Trends", "Generative AI"]
 tags: ["AI agents","chatbots","AI automation","generative AI","AI productivity","digital workers","AI tools","AI trends"]

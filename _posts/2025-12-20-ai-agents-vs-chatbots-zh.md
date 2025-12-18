@@ -1,6 +1,9 @@
 ---
 title: "为什么现在人人都在谈 AI Agent —— 它与聊天机器人的本质区别"
 permalink: /zh/ai-agents-vs-chatbots/
+translations:
+  ja: /ja/ai-agents-vs-chatbots/
+  en: /ai-agents-vs-chatbots/
 date: 2025-12-20 12:00:00 +0900
 categories: ["AI基础", "AI趋势", "生成式AI"]
 lang: zh

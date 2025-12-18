@@ -1,6 +1,9 @@
 ---
 title: "AIで作られた広告・画像：表示（ディスクロージャー）と倫理のグローバル基準チェックリスト"
 permalink: /ja/ai-ads-ethics/
+translations:
+  en: /ai-ads-ethics/
+  zh: /zh/ai-ads-ethics/
 date: 2025-12-19 09:00:00 +0900
 categories: ["AI Ethics", "Media Literacy", "Digital Society"]
 lang: ja-JP

@@ -1,6 +1,9 @@
 ---
 title: "ChatGPT Image Menu Explained: What’s New and How It Differs from Chat-Based Image Generation"
 slug: "chatgpt-image-menu-explained"
+translations:
+  ja: /ja/chatgpt-image-menu-explained/
+  zh: /zh/chatgpt-image-menu-explained/
 date: 2025-12-19 12:00:00 +0900
 categories: ["AI Tools", "Generative AI"]
 tags: ["ChatGPT","Image Menu","AI Image Generation","Multimodal AI","Content Creation","AI Workflow","OpenAI","AI Tools"]

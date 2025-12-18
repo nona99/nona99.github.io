@@ -1,6 +1,9 @@
 ---
 title: "AI-Made Ads & Images: Global Disclosure and Ethics Checklist (What Everyone Should Know)"
 slug: "ai-ads-ethics"
+translations:
+  ja: /ja/ai-ads-ethics/
+  zh: /zh/ai-ads-ethics/
 date: 2025-12-19 09:00:00 +0900
 categories: ["AI Ethics", "Media Literacy", "Digital Society"]
 tags: ["AI","Generative AI","AI images","AI advertising","Deepfakes","Disclosure","Transparency","Media literacy","Misinformation","Consumer protection","Copyright","Privacy","Likeness rights","C2PA","Content Credentials","Platform policies"]

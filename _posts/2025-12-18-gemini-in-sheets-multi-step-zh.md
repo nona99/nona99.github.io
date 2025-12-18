@@ -1,6 +1,9 @@
 ---
 title: "Gemini in Sheets 多步骤工作流指南：用自然语言生成表格、透视表、图表与公式"
 permalink: /zh/gemini-in-sheets-multi-step/
+translations:
+  ja: /ja/gemini-in-sheets-multi-step/
+  en: /gemini-in-sheets-multi-step/
 date: 2025-12-18 12:00:00 +0900
 categories: ["AI Tools", "Productivity", "Google Workspace"]
 lang: zh
