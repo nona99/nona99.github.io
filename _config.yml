@@ -210,11 +210,13 @@ defaults:
       lang: "ja-JP"
       layout: page
       permalink: /ja/:title/
+      published: false
   - scope:
       path: "zh"
       type: "zh"
     values:
       lang: "zh"
+      published: false
 
 sass:
   style: compressed

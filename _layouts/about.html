@@ -1,0 +1,28 @@
+---
+layout: page
+# The layout for Tag page
+---
+
+{% include lang.html %}
+
+{% assign posts_en = page.posts | where: "lang", "en" %}
+
+<div id="page-about">
+  <h1 class="ps-lg-2">
+    <i class="fa fa-tag fa-fw text-muted"></i>
+    About
+  </h1>
+  <div>This site focuses on understanding how AI actually works in practice — 
+not just what new features are announced.</div>
+  <div>Rather than rewriting press releases or chasing every update, 
+the articles here examine how AI tools, models, and infrastructure 
+affect real workflows, decisions, and trade-offs.</div>
+  <div>Most posts are based on hands-on use, comparison, and analysis.
+When a tool sounds impressive but fails in practice, that gap matters.
+When an industry trend looks obvious on the surface but hides a constraint,
+that structure matters more than hype.</div>
+  <div>This site is written and maintained by an individual creator.
+Opinions are personal and reflect practical judgment, not sponsorship.
+The goal is simple: help readers think more clearly about when AI helps,
+when it doesn’t, and why.</div>
+</div>
