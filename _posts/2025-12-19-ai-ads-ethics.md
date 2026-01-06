@@ -5,7 +5,7 @@ translations:
   ja: /ja/ai-ads-ethics/
   zh: /zh/ai-ads-ethics/
 date: 2025-12-19 09:00:00 +0900
-last_modified_at: 2026-01-09 10:30:00 +0900
+last_modified_at: 2026-01-02 10:30:00 +0900
 categories: ["AI Ethics", "Media Literacy", "Digital Society"]
 tags: ["AI","Generative AI","AI images","AI advertising","Deepfakes","Disclosure","Transparency","Media literacy","Misinformation","Consumer protection","Copyright","Privacy","Likeness rights","C2PA","Content Credentials","Platform policies"]
 lang: en

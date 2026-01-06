@@ -5,7 +5,7 @@ translations:
   ja: /ja/ai-agents-vs-chatbots/
   zh: /zh/ai-agents-vs-chatbots/
 date: 2025-12-20 12:00:00 +0900
-last_modified_at: 2026-01-07 10:30:00 +0900
+last_modified_at: 2025-12-21 10:30:00 +0900
 categories: ["AI Basics", "AI Trends", "Generative AI"]
 tags: ["AI agents","chatbots","AI automation","generative AI","AI productivity","digital workers","AI tools","AI trends"]
 lang: en
