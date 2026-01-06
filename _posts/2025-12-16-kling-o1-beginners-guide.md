@@ -2,6 +2,7 @@
 title: "Kling (Kling O1) Beginner’s Guide: What It Is, What “Multimodal” Really Means, and How to Get Good Results Fast"
 slug: "kling-o1-beginners-guide"
 date: 2025-12-16 12:00:00 +0900
+last_modified_at: 2026-01-05 10:30:00 +0900
 categories: ["AI Tools", "Generative AI"]
 tags: ["Kling", "Kling O1", "video generation", "text-to-video", "image-to-video", "multimodal AI", "AI video", "beginner guide", "prompting", "video editing"]
 lang: en

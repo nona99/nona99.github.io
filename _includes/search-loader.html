@@ -34,14 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var jsonPath = '{{ "/assets/js/data/search-en.json" | relative_url }}';
   var noResultsText = {{ not_found_html | strip_newlines | jsonify }};
 
-  // 언어별 JSON 선택
-  if (lang === 'ja' || lang === 'ja-jp') {
-    jsonPath = '{{ "/assets/js/data/search-ja.json" | relative_url }}';
-  } else if (lang === 'zh' || lang === 'zh-cn') {
-    jsonPath = '{{ "/assets/js/data/search-zh.json" | relative_url }}';
-  } else if (lang === 'ko' || lang === 'ko-kr') {
-    jsonPath = '{{ "/assets/js/data/search-ko.json" | relative_url }}';
-  }
 
   if (!window.SimpleJekyllSearch) {
     return;
