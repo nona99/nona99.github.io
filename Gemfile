@@ -3,7 +3,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "html-proofer", "~> 5.0", group: :test
+gem "html-proofer", "~> 5.2", group: :test
 gem "jekyll-admin", group: :jekyll_plugins
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
