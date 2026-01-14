@@ -17,9 +17,9 @@ tags:
 - AI chips
 - AI hardware
 lang: en
-description: Apple and Samsung are turning AI from a feature into a hardware-first platform. This deep dive explains the architectural choices—on-device NPUs, privacy, cloud offload, and ecosystem strategy—that will define the next decade of consumer devices.
-og_title: Apple vs. Samsung: The AI Hardware War Defining the Next Decade
-og_description: This isn’t a feature race. It’s a hardware and architecture race—NPUs, power budgets, privacy, cloud offload, and ecosystem control.
+description: "Apple and Samsung are turning AI from a feature into a hardware-first platform. This deep dive explains the architectural choices—on-device NPUs, privacy, cloud offload, and ecosystem strategy—that will define the next decade of consumer devices."
+og_title: "Apple vs. Samsung: The AI Hardware War Defining the Next Decade"
+og_description: "This isn’t a feature race. It’s a hardware and architecture race—NPUs, power budgets, privacy, cloud offload, and ecosystem control."
 ---
 
 ## 2025–2026: AI Stops Being “Software” and Becomes the Device
